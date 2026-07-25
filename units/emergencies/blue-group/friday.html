@@ -24,8 +24,8 @@
 
 
 
-<main>
 
+<main>
 
 
 
@@ -33,14 +33,12 @@
 
 <h2>🏆 Friday: Emergency Expert Challenge</h2>
 
-
 <p>
 You learned a lot this week! Today you will show what you know.
 </p>
 
-
 <p>
-You are ready to become an Emergency Expert!
+⭐ Are you ready to become an Emergency Expert?
 </p>
 
 </div>
@@ -57,7 +55,7 @@ You are ready to become an Emergency Expert!
 
 
 <p>
-Remember the important safety steps:
+Remember our safety steps:
 </p>
 
 
@@ -84,9 +82,11 @@ Remember the important safety steps:
 
 
 
+
 <div class="unit-card">
 
 <h2>🎮 Emergency Expert Quiz</h2>
+
 
 
 
@@ -133,7 +133,7 @@ Ignore it
 
 
 
-<h3>3. During a drill I should:</h3>
+<h3>3. During a safety drill I should:</h3>
 
 
 <button class="button" onclick="answer(true,'q3')">
@@ -142,7 +142,7 @@ Listen and follow directions
 
 
 <button class="button" onclick="answer(false,'q3')">
-Run around
+Run around the room
 </button>
 
 
@@ -186,14 +186,20 @@ Keep it a secret
 
 
 <p>
-Your class hears the fire alarm. What should you do?
+Your class hears the fire alarm. Your teacher tells everyone to line up.
 </p>
 
 
-<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
+<p>
+What should you do?
+</p>
+
+
+<textarea rows="5" cols="40" placeholder="Type your answer here..."></textarea>
 
 
 </div>
+
 
 
 
@@ -211,7 +217,7 @@ I am an Emergency Expert because I can:
 </p>
 
 
-<textarea rows="4" cols="40"></textarea>
+<textarea rows="4" cols="40" placeholder="Finish the sentence..."></textarea>
 
 
 </div>
@@ -225,7 +231,7 @@ I am an Emergency Expert because I can:
 
 <div class="unit-card">
 
-<h2>🎉 Great Job!</h2>
+<h2>🎉 Congratulations!</h2>
 
 
 <p>
@@ -239,6 +245,7 @@ You completed the Emergency Unit!
 
 
 </div>
+
 
 
 
@@ -263,7 +270,6 @@ You completed the Emergency Unit!
 
 
 
-
 <div id="footer"></div>
 
 
@@ -277,16 +283,19 @@ You completed the Emergency Unit!
 
 <script>
 
+
 loadComponent(
 "header",
 "../../../components/header.html"
 );
 
 
+
 loadComponent(
 "navigation",
 "../../../components/navigation.html"
 );
+
 
 
 loadComponent(
@@ -296,25 +305,33 @@ loadComponent(
 
 
 
+
+
 function answer(correct,id){
 
 
 if(correct){
 
+
 document.getElementById(id).innerHTML =
 "⭐ Correct! Great job!";
 
+
 }
+
 
 else{
 
+
 document.getElementById(id).innerHTML =
-"Try again. Think about safety.";
-
-}
+"Try again. Think about staying safe.";
 
 
 }
+
+
+}
+
 
 
 </script>
