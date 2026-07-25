@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Thursday - Emergency Safety</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💚 Green Group</h1>
+
+<p>🚨 Emergency Experts</p>
+
+</header>
+
+
+
+<main>
+
+
+<div class="unit-card">
+
+<h2>🚨 Thursday: Staying Safe</h2>
+
+<p>
+Today we will practice safe choices during emergencies.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ My Safety Steps</h2>
+
+
+<ul>
+
+<li>🛑 Stop</li>
+
+<li>👂 Listen</li>
+
+<li>🚶 Follow directions</li>
+
+<li>🙋 Tell an adult</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Good Choice or Not?</h2>
+
+
+
+<h3>🔥 There is smoke. I tell my teacher.</h3>
+
+
+<button class="button" onclick="check(true,'a1')">
+⭐ Good Choice
+</button>
+
+
+<button class="button" onclick="check(false,'a1')">
+❌ Not Safe
+</button>
+
+
+<p id="a1"></p>
+
+
+
+
+
+
+<h3>🚨 My teacher gives directions. I listen.</h3>
+
+
+<button class="button" onclick="check(true,'a2')">
+⭐ Good Choice
+</button>
+
+
+<button class="button" onclick="check(false,'a2')">
+❌ Not Safe
+</button>
+
+
+<p id="a2"></p>
+
+
+
+
+
+
+<h3>🗣️ The teacher says quiet. I yell.</h3>
+
+
+<button class="button" onclick="check(false,'a3')">
+⭐ Good Choice
+</button>
+
+
+<button class="button" onclick="check(true,'a3')">
+❌ Not Safe
+</button>
+
+
+<p id="a3"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>✏️ Practice</h2>
+
+
+<p>
+When I need help, I can tell:
+</p>
+
+
+<label>
+
+<input type="radio" name="q1">
+
+An adult
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q1">
+
+No one
+
+</label>
+
+
+<br><br>
+
+
+<p>
+My voice should be:</p>
+
+
+<label>
+
+<input type="radio" name="q2">
+
+Quiet
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q2">
+
+Very loud
+
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ I Can Stay Safe!</h2>
+
+
+<p>
+I can listen, stay calm, and follow directions.
+</p>
+
+
+</div>
+
+
+
+
+
+<a class="button" href="index.html">
+
+⬅ Back to Green Group
+
+</a>
+
+
+
+</main>
+
+
+
+
+<script>
+
+function check(correct,id){
+
+if(correct){
+
+document.getElementById(id).innerHTML =
+"⭐ Great job!";
+
+}
+
+else{
+
+document.getElementById(id).innerHTML =
+"Try again. Think safe choice.";
+
+}
+
+}
+
+</script>
+
+
+
+<footer>
+
+<p>Social Skills Interactive 💚</p>
+
+</footer>
+
+
+</body>
+
+</html>
