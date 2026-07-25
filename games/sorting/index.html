@@ -10,183 +10,51 @@
 
 <link rel="stylesheet" href="../../css/styles.css">
 
-
-<style>
-
-.game-area {
-
-text-align:center;
-padding:20px;
-
-}
-
-
-.cards {
-
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-
-}
-
-
-.card {
-
-background:white;
-padding:20px;
-width:200px;
-border-radius:20px;
-box-shadow:0 5px 10px rgba(0,0,0,.15);
-
-font-size:20px;
-
-cursor:grab;
-
-}
-
-
-.drop-area {
-
-display:inline-block;
-
-width:300px;
-
-min-height:180px;
-
-margin:20px;
-
-padding:20px;
-
-border-radius:20px;
-
-background:#f4f4f4;
-
-font-size:22px;
-
-}
-
-
-.correct {
-
-background:#d4edda;
-
-}
-
-
-.incorrect {
-
-background:#f8d7da;
-
-}
-
-
-</style>
-
 </head>
 
 
-
 <body>
-
 
 <header>
 
 <h1>🚨 Emergency or Not?</h1>
 
-<p>Drag each card to the correct box!</p>
+<p>Choose where each situation belongs!</p>
 
 </header>
 
 
-
-<main class="game-area">
-
-
-<h2>Cards</h2>
+<main>
 
 
-<div class="cards">
+<div class="unit-card">
 
-
-<div class="card"
-draggable="true"
-data-answer="emergency">
-
+<h2 id="situation">
 🔥 A classroom is on fire
-
-</div>
-
-
-<div class="card"
-draggable="true"
-data-answer="not">
-
-✏️ Your pencil breaks
-
-</div>
+</h2>
 
 
-<div class="card"
-draggable="true"
-data-answer="emergency">
-
-🚗 A car crashes
-
-</div>
+<button class="button" onclick="answer('emergency')">
+🚨 Emergency
+</button>
 
 
-<div class="card"
-draggable="true"
-data-answer="not">
-
-🧸 You lose your toy
-
-</div>
-
-
-<div class="card"
-draggable="true"
-data-answer="emergency">
-
-🚑 Someone is badly hurt
-
-</div>
-
-
-<div class="card"
-draggable="true"
-data-answer="not">
-
-🍎 You don't like your lunch
-
-</div>
+<button class="button" onclick="answer('not')">
+🙂 Not an Emergency
+</button>
 
 
 </div>
 
 
-
-<h2>Sort Here</h2>
-
-
-<div class="drop-area" id="emergency">
-
-🚨 EMERGENCY
-
-</div>
+<h2 id="feedback"></h2>
 
 
-<div class="drop-area" id="not">
+<div class="unit-card">
 
-🙂 NOT AN EMERGENCY
+<h2>Score: <span id="score">0</span>/6</h2>
 
 </div>
-
-
-
-<h2 id="message"></h2>
-
 
 
 <a class="button" href="../../units/emergencies/blue-group/monday.html">
@@ -201,69 +69,62 @@ data-answer="not">
 <script>
 
 
-let cards = document.querySelectorAll(".card");
+let questions = [
+
+{
+text:"🔥 A classroom is on fire",
+answer:"emergency"
+},
+
+{
+text:"✏️ Your pencil breaks",
+answer:"not"
+},
+
+{
+text:"🚗 A car crashes",
+answer:"emergency"
+},
+
+{
+text:"🧸 You lose your toy",
+answer:"not"
+},
+
+{
+text:"🚑 Someone is badly hurt",
+answer:"emergency"
+},
+
+{
+text:"🍎 You do not like your lunch",
+answer:"not"
+}
+
+];
 
 
-let boxes = document.querySelectorAll(".drop-area");
+let current = 0;
 
-
-
-cards.forEach(card => {
-
-
-card.addEventListener("dragstart", function(event){
-
-event.dataTransfer.setData(
-"text",
-card.dataset.answer
-);
-
-
-event.dataTransfer.setData(
-"card",
-card.innerHTML
-);
-
-
-});
-
-
-});
-
-
-
-boxes.forEach(box => {
-
-
-box.addEventListener("dragover", function(event){
-
-event.preventDefault();
-
-});
-
-
-
-box.addEventListener("drop", function(event){
-
-
-event.preventDefault();
-
-
-let answer = event.dataTransfer.getData("text");
-
-
-let cardText = event.dataTransfer.getData("card");
+let score = 0;
 
 
 
-if(box.id === answer){
+function answer(choice){
 
 
-box.classList.add("correct");
+let feedback = document.getElementById("feedback");
 
 
-document.getElementById("message").innerHTML =
-"⭐ Great job!";
+if(choice === questions[current].answer){
+
+
+score++;
+
+document.getElementById("score").innerHTML = score;
+
+
+feedback.innerHTML = "⭐ Great job!";
 
 
 }
@@ -272,20 +133,45 @@ document.getElementById("message").innerHTML =
 else{
 
 
-box.classList.add("incorrect");
+feedback.innerHTML =
+"Try again! Think: Does someone need help right away?";
 
 
-document.getElementById("message").innerHTML =
-"Try again! Think about if someone needs help right away.";
+return;
+
 
 }
 
 
 
-});
+current++;
 
 
-});
+if(current < questions.length){
+
+
+document.getElementById("situation").innerHTML =
+questions[current].text;
+
+
+}
+
+
+else{
+
+
+document.getElementById("situation").innerHTML =
+"🎉 You finished!";
+
+
+feedback.innerHTML =
+"⭐ Emergency Expert Complete!";
+
+
+}
+
+
+}
 
 
 </script>
