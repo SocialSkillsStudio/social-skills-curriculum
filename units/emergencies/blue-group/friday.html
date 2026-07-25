@@ -16,32 +16,15 @@
 <body>
 
 
-<header>
-
-<h1>💙 Blue Group</h1>
-
-<p>🚨 Emergency Expert Challenge</p>
-
-</header>
+<div id="header"></div>
 
 
-
-
-<nav class="main-nav">
-
-<a class="home-button" href="../../../index.html">
-🏠 Home
-</a>
-
-</nav>
-
-
+<div id="navigation"></div>
 
 
 
 
 <main>
-
 
 
 
@@ -56,6 +39,10 @@ You learned a lot this week! Today you will show what you know.
 </p>
 
 
+<p>
+You are ready to become an Emergency Expert!
+</p>
+
 </div>
 
 
@@ -66,20 +53,25 @@ You learned a lot this week! Today you will show what you know.
 
 <div class="unit-card">
 
-<h2>⭐ Review: What Did We Learn?</h2>
+<h2>⭐ Emergency Review</h2>
+
+
+<p>
+Remember the important safety steps:
+</p>
 
 
 <ul>
 
-<li>🚨 An emergency is a situation where someone needs help.</li>
+<li>🚨 Recognize when something is an emergency</li>
 
-<li>👮🚒🚑 Helpers keep people safe.</li>
+<li>👂 Listen to trusted adults</li>
 
-<li>👂 We listen to directions.</li>
+<li>🚶 Follow directions</li>
 
-<li>🤫 We use calm voices.</li>
+<li>🙋 Ask for help</li>
 
-<li>🚶 We follow safety instructions.</li>
+<li>😌 Stay calm</li>
 
 </ul>
 
@@ -92,10 +84,10 @@ You learned a lot this week! Today you will show what you know.
 
 
 
-
 <div class="unit-card">
 
 <h2>🎮 Emergency Expert Quiz</h2>
+
 
 
 
@@ -124,12 +116,12 @@ Something fun to do
 
 
 <button class="button" onclick="answer(true,'q2')">
-Firefighter
+🚒 Firefighter
 </button>
 
 
 <button class="button" onclick="answer(false,'q2')">
-Someone who ignores it
+Ignore it
 </button>
 
 
@@ -141,7 +133,7 @@ Someone who ignores it
 
 
 
-<h3>3. During a drill I should...</h3>
+<h3>3. During a drill I should:</h3>
 
 
 <button class="button" onclick="answer(true,'q3')">
@@ -162,7 +154,7 @@ Run around
 
 
 
-<h3>4. If I need help I should...</h3>
+<h3>4. If I need help I should:</h3>
 
 
 <button class="button" onclick="answer(true,'q4')">
@@ -171,7 +163,7 @@ Tell a trusted adult
 
 
 <button class="button" onclick="answer(false,'q4')">
-Keep it secret
+Keep it a secret
 </button>
 
 
@@ -198,7 +190,7 @@ Your class hears the fire alarm. What should you do?
 </p>
 
 
-<textarea rows="4" cols="40" placeholder="Write your answer here..."></textarea>
+<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
 
 
 </div>
@@ -209,10 +201,9 @@ Your class hears the fire alarm. What should you do?
 
 
 
-
 <div class="unit-card">
 
-<h2>🏆 Emergency Expert Certificate</h2>
+<h2>🏆 Emergency Expert Reflection</h2>
 
 
 <p>
@@ -230,6 +221,8 @@ I am an Emergency Expert because I can:
 
 
 
+
+
 <div class="unit-card">
 
 <h2>🎉 Great Job!</h2>
@@ -241,7 +234,7 @@ You completed the Emergency Unit!
 
 
 <p>
-⭐ You practiced staying safe and helping others.
+⭐ You practiced making safe choices and staying safe.
 </p>
 
 
@@ -260,6 +253,9 @@ You completed the Emergency Unit!
 </a>
 
 
+
+
+
 </main>
 
 
@@ -268,8 +264,37 @@ You completed the Emergency Unit!
 
 
 
+<div id="footer"></div>
+
+
+
+
+
+
+
+<script src="../../../js/components.js"></script>
+
 
 <script>
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
 
 function answer(correct,id){
 
@@ -291,21 +316,10 @@ document.getElementById(id).innerHTML =
 
 }
 
+
 </script>
 
 
-
-
-
-
-
-<footer>
-
-<p>
-🚨 Social Skills Interactive
-</p>
-
-</footer>
 
 
 
