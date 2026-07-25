@@ -16,41 +16,30 @@
 <body>
 
 
-<header>
+<div id="header"></div>
 
-<h1>💙 Blue Group</h1>
 
-<p>🚨 Emergency Experts</p>
+<div id="navigation"></div>
 
-</header>
+
 
 
 
 <main>
 
 
+
+
+
 <div class="unit-card">
 
 <h2>🚨 Monday: What Is An Emergency?</h2>
 
-<p>
-Today we will learn what an emergency is, how to recognize one, and who can help us.
-</p>
-
-</div>
-
-
-
-
-<div class="unit-card">
-
-<h2>💭 Before You Learn</h2>
 
 <p>
-What do YOU think an emergency is?
+Today we will learn what an emergency is and how to know when we need help.
 </p>
 
-<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
 
 </div>
 
@@ -58,36 +47,33 @@ What do YOU think an emergency is?
 
 
 
+
+
+
 <div class="unit-card">
 
-<h2>👀 Watch & Learn</h2>
+<h2>⭐ What Is An Emergency?</h2>
+
 
 <p>
-Learn about 911 and when people need help.
+An emergency is a situation where someone needs help right away.
 </p>
 
 
-<a class="button" 
-href="https://www.carolinemd.org/630/911-for-Kids" 
-target="_blank">
-
-Learn About 911
-
-</a>
-
-
 <p>
-While you learn, think about:
+Emergencies can feel scary, but we can stay safe by:
 </p>
 
 
 <ul>
 
-<li>When should someone call 911?</li>
+<li>🛑 Stopping our body</li>
 
-<li>Who comes to help during an emergency?</li>
+<li>👂 Listening carefully</li>
 
-<li>Why is it important to stay calm?</li>
+<li>🚶 Following directions</li>
+
+<li>🙋 Asking for help</li>
 
 </ul>
 
@@ -98,79 +84,39 @@ While you learn, think about:
 
 
 
+
+
+
 <div class="unit-card">
 
-<h2>🎮 Play</h2>
+<h2>🎥 Watch and Learn</h2>
+
 
 <p>
-Practice telling the difference between emergencies and things that are not emergencies.
+Watch the video and think about:
 </p>
 
 
-<a class="button" href="../../../games/sorting/index.html">
+<ul>
 
-Play Emergency Sorting Game
+<li>What is happening?</li>
 
-</a>
+<li>Who helps?</li>
 
+<li>What safe choices do people make?</li>
 
-</div>
-
-
-
-
-
-<div class="unit-card">
-
-<h2>✏️ Practice Questions</h2>
-
-
-<h3>1. What is an emergency?</h3>
-
-<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
+</ul>
 
 
 
-
-<h3>2. Which one is an emergency?</h3>
-
-
-<label>
-<input type="radio" name="q2">
-A. A fire in a building
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q2">
-B. A broken pencil
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q2">
-C. Losing a toy
-</label>
-
-
-
-
-
-<h3>3. Who can help during an emergency?</h3>
-
-<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
-
-
-
-
-
-<h3>4. Why is it important to tell an adult about an emergency?</h3>
-
-<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/iuJE36d2eS0"
+title="Emergency Safety"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
 
 </div>
@@ -181,38 +127,124 @@ C. Losing a toy
 
 
 
+
 <div class="unit-card">
 
-<h2>⭐ Think About It</h2>
+<h2>🧠 Emergency or Not?</h2>
+
 
 <p>
-You see smoke coming from the classroom. What should you do?
+Choose the best answer.
 </p>
 
 
-<label>
-<input type="radio" name="scenario">
-Tell the teacher
-</label>
-
-<br>
 
 
-<label>
-<input type="radio" name="scenario">
-Keep working and ignore it
-</label>
-
-<br>
+<h3>🔥 There is smoke coming from a building.</h3>
 
 
-<label>
-<input type="radio" name="scenario">
-Run around the classroom
-</label>
+<button class="button" onclick="answer(true,'q1')">
+🚨 Emergency
+</button>
+
+
+<button class="button" onclick="answer(false,'q1')">
+🙂 Not an emergency
+</button>
+
+
+<p id="q1"></p>
+
+
+
+
+
+
+
+<h3>🎮 You want to play a video game.</h3>
+
+
+<button class="button" onclick="answer(false,'q2')">
+🚨 Emergency
+</button>
+
+
+<button class="button" onclick="answer(true,'q2')">
+🙂 Not an emergency
+</button>
+
+
+<p id="q2"></p>
+
+
+
+
+
+
+
+<h3>🤕 Someone is badly hurt.</h3>
+
+
+<button class="button" onclick="answer(true,'q3')">
+🚨 Emergency
+</button>
+
+
+<button class="button" onclick="answer(false,'q3')">
+🙂 Not an emergency
+</button>
+
+
+<p id="q3"></p>
+
 
 
 </div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>✏️ My Safety Plan</h2>
+
+
+<p>
+If there is an emergency, I can:
+</p>
+
+
+<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Remember</h2>
+
+
+<p>
+STOP → LISTEN → FOLLOW DIRECTIONS → GET HELP
+</p>
+
+
+</div>
+
+
+
+
 
 
 
@@ -225,18 +257,75 @@ Run around the classroom
 
 
 
+
+
 </main>
 
 
 
 
-<footer>
 
-<p>
-Social Skills Interactive 💙
-</p>
 
-</footer>
+
+<div id="footer"></div>
+
+
+
+
+
+
+
+<script src="../../../js/components.js"></script>
+
+
+<script>
+
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+
+
+function answer(correct,id){
+
+
+if(correct){
+
+document.getElementById(id).innerHTML =
+"⭐ Correct! Great job!";
+
+}
+
+else{
+
+document.getElementById(id).innerHTML =
+"Try again. Think about safety.";
+
+}
+
+
+}
+
+
+</script>
+
+
+
 
 
 
