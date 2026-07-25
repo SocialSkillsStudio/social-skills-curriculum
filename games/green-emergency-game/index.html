@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Emergency Game</title>
+
+<link rel="stylesheet" href="../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💚 Emergency or Not?</h1>
+
+<p>Look at the picture. Make a safe choice!</p>
+
+</header>
+
+
+
+<main>
+
+
+
+<div class="unit-card">
+
+
+<h2 id="scenario"></h2>
+
+
+<div id="question">
+
+<p>Is this an emergency?</p>
+
+
+<button class="button" onclick="answer('yes')">
+🚨 YES
+</button>
+
+
+<button class="button" onclick="answer('no')">
+🙂 NO
+</button>
+
+
+</div>
+
+
+
+<h2 id="feedback"></h2>
+
+
+<h3>
+⭐ Score: <span id="score">0</span>/8
+</h3>
+
+
+
+</div>
+
+
+
+
+<a class="button" href="../../units/emergencies/green-group/monday.html">
+⬅ Back to Lesson
+</a>
+
+
+
+</main>
+
+
+
+
+
+<script>
+
+
+let scenarios = [
+
+{
+text:"🔥 There is a fire in the classroom.",
+answer:"yes"
+},
+
+{
+text:"🧸 You cannot find your toy.",
+answer:"no"
+},
+
+{
+text:"🚑 Someone is hurt and needs help.",
+answer:"yes"
+},
+
+{
+text:"🍎 You do not like your lunch.",
+answer:"no"
+},
+
+{
+text:"🚗 A car accident happens.",
+answer:"yes"
+},
+
+{
+text:"✏️ Your pencil breaks.",
+answer:"no"
+},
+
+{
+text:"😢 Someone is crying because they are hurt.",
+answer:"yes"
+},
+
+{
+text:"👟 Your shoe comes untied.",
+answer:"no"
+}
+
+];
+
+
+let current = 0;
+
+let score = 0;
+
+
+
+document.getElementById("scenario").innerHTML =
+scenarios[current].text;
+
+
+
+
+function answer(choice){
+
+
+let feedback =
+document.getElementById("feedback");
+
+
+
+if(choice === scenarios[current].answer){
+
+
+score++;
+
+document.getElementById("score").innerHTML = score;
+
+
+feedback.innerHTML =
+"⭐ Great job!";
+
+
+}
+
+
+else{
+
+
+feedback.innerHTML =
+"Try again. Does someone need help right now?";
+
+
+return;
+
+
+}
+
+
+
+current++;
+
+
+
+if(current < scenarios.length){
+
+
+setTimeout(function(){
+
+
+document.getElementById("scenario").innerHTML =
+scenarios[current].text;
+
+
+feedback.innerHTML = "";
+
+
+},1000);
+
+
+
+}
+
+
+else{
+
+
+document.getElementById("scenario").innerHTML =
+"🎉 You finished!";
+
+
+feedback.innerHTML =
+"⭐ You are an Emergency Expert!";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
