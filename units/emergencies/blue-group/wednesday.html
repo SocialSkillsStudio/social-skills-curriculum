@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blue Group Wednesday - Lockdown Drills</title>
+<title>Blue Group Wednesday - School Safety & Drills</title>
 
 <link rel="stylesheet" href="../../../css/styles.css">
 
@@ -16,13 +16,12 @@
 <body>
 
 
-<header>
+<div id="header"></div>
 
-<h1>💙 Blue Group</h1>
 
-<p>🚨 Emergency Experts</p>
+<div id="navigation"></div>
 
-</header>
+
 
 
 
@@ -31,13 +30,16 @@
 
 
 
+
 <div class="unit-card">
 
-<h2>🏫 Wednesday: School Safety & Lockdown Drills</h2>
+<h2>🏫 Wednesday: School Safety & Drills</h2>
+
 
 <p>
-Today we will learn what a lockdown drill is and how to stay safe at school.
+Today we will learn why schools practice safety drills and how we can make safe choices.
 </p>
+
 
 </div>
 
@@ -47,12 +49,182 @@ Today we will learn what a lockdown drill is and how to stay safe at school.
 
 
 
+
 <div class="unit-card">
 
-<h2>💭 Think About It</h2>
+<h2>⭐ Why Do We Practice Drills?</h2>
+
 
 <p>
-What do you think a drill is?
+Schools practice drills so everyone knows what to do during an emergency.
+</p>
+
+
+<ul>
+
+<li>👂 Listen to the teacher</li>
+
+<li>🚶 Walk safely</li>
+
+<li>🤫 Use a quiet voice</li>
+
+<li>🙋 Ask for help if needed</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎥 Watch and Learn</h2>
+
+
+<p>
+Watch the video and think about:
+</p>
+
+
+<ul>
+
+<li>What safety rules do you notice?</li>
+
+<li>How do students follow directions?</li>
+
+<li>Why is staying calm important?</li>
+
+</ul>
+
+
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/vyLWnLd63KA"
+title="School Safety Drill"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Safety Choice Challenge</h2>
+
+
+<p>
+Choose the safest choice.
+</p>
+
+
+
+
+
+<h3>🚨 The alarm goes off.</h3>
+
+
+<button class="button" onclick="answer(true,'q1')">
+👂 Listen to my teacher
+</button>
+
+
+<button class="button" onclick="answer(false,'q1')">
+🏃 Run around the room
+</button>
+
+
+<p id="q1"></p>
+
+
+
+
+
+
+
+<h3>🚶 The class is walking in a line.</h3>
+
+
+<button class="button" onclick="answer(true,'q2')">
+Stay with my class
+</button>
+
+
+<button class="button" onclick="answer(false,'q2')">
+Go somewhere else
+</button>
+
+
+<p id="q2"></p>
+
+
+
+
+
+
+
+<h3>😟 I feel nervous during a drill.</h3>
+
+
+<button class="button" onclick="answer(true,'q3')">
+Tell a trusted adult
+</button>
+
+
+<button class="button" onclick="answer(false,'q3')">
+Hide and not tell anyone
+</button>
+
+
+<p id="q3"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🧠 What Would You Do?</h2>
+
+
+<p>
+Your teacher says, "Line up quietly."
+</p>
+
+
+<p>
+What should your body do?
+</p>
+
+
+<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
+
+
+
+<p>
+Why is it important to listen during a drill?
 </p>
 
 
@@ -67,231 +239,27 @@ What do you think a drill is?
 
 
 
-<div class="unit-card">
-
-<h2>👀 Watch & Learn</h2>
-
-<p>
-Watch the video about lockdown drills. Pay attention to what students do to stay safe.
-</p>
-
-
-<iframe
-width="560"
-height="315"
-src="https://www.youtube.com/embed/vyLWnLd63KA"
-title="Lockdown Drill Safety"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-
-</div>
-
-
-
-
-
-
 
 <div class="unit-card">
 
-<h2>✏️ Check Your Understanding</h2>
-
-
-
-<h3>1. What is a drill?</h3>
-
-
-<label>
-<input type="radio" name="q1">
-A. Practice for an emergency
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q1">
-B. A fun game
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q1">
-C. A surprise activity
-</label>
-
-
-
-
-
-
-
-<h3>2. Why do schools have lockdown drills?</h3>
-
-
-<label>
-<input type="radio" name="q2">
-A. To practice staying safe
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q2">
-B. To scare students
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q2">
-C. To skip class
-</label>
-
-
-
-
-
-
-
-<h3>3. During a lockdown drill, I should...</h3>
-
-
-<label>
-<input type="radio" name="q3">
-A. Follow directions
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q3">
-B. Make lots of noise
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="q3">
-C. Ignore the teacher
-</label>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>🎮 Ready or Not Ready?</h2>
-
-<p>
-Decide if the student is making a safe choice.
-</p>
-
-
-
-<h3>🤫 The teacher says "stay quiet." The student uses a quiet voice.</h3>
-
-
-<button class="button" onclick="answer(true,'feedback1')">
-✅ Ready
-</button>
-
-
-<button class="button" onclick="answer(false,'feedback1')">
-❌ Not Ready
-</button>
-
-
-<p id="feedback1"></p>
-
-
-
-
-
-
-<h3>🗣️ The teacher says "be quiet." The student starts yelling.</h3>
-
-
-<button class="button" onclick="answer(false,'feedback2')">
-✅ Ready
-</button>
-
-
-<button class="button" onclick="answer(true,'feedback2')">
-❌ Not Ready
-</button>
-
-
-<p id="feedback2"></p>
-
-
-
-
-
-
-
-<h3>👂 The teacher gives directions. The student listens.</h3>
-
-
-<button class="button" onclick="answer(true,'feedback3')">
-✅ Ready
-</button>
-
-
-<button class="button" onclick="answer(false,'feedback3')">
-❌ Not Ready
-</button>
-
-
-<p id="feedback3"></p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>⭐ Remember</h2>
-
-<p>
-During a drill, I can:
-</p>
+<h2>⭐ Safety Drill Checklist</h2>
 
 
 <ul>
 
-<li>👂 Listen to adults</li>
+<li>☐ I listen</li>
 
-<li>🤫 Use a quiet voice</li>
+<li>☐ I stay calm</li>
 
-<li>🚶 Follow directions</li>
+<li>☐ I follow directions</li>
 
-<li>🧘 Stay calm</li>
+<li>☐ I stay with my group</li>
 
 </ul>
 
 
 </div>
+
 
 
 
@@ -308,6 +276,7 @@ During a drill, I can:
 
 
 
+
 </main>
 
 
@@ -315,24 +284,55 @@ During a drill, I can:
 
 
 
+
+<div id="footer"></div>
+
+
+
+
+
+
+
+<script src="../../../js/components.js"></script>
+
+
 <script>
 
 
-function answer(correct, location){
+loadComponent(
+"header",
+"../../../components/header.html"
+);
 
 
-let message = document.getElementById(location);
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+
+
+function answer(correct,id){
 
 
 if(correct){
 
-message.innerHTML = "⭐ Great job! That is a safe choice.";
+document.getElementById(id).innerHTML =
+"⭐ Correct! Great safety choice!";
 
 }
 
 else{
 
-message.innerHTML = "Try again. Think about staying safe.";
+document.getElementById(id).innerHTML =
+"Try again. Think about staying safe.";
 
 }
 
@@ -344,16 +344,6 @@ message.innerHTML = "Try again. Think about staying safe.";
 
 
 
-
-
-
-<footer>
-
-<p>
-Social Skills Interactive 💙
-</p>
-
-</footer>
 
 
 
