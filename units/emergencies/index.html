@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Emergency Unit</title>
+<title>Blue Group - Emergency Unit</title>
 
-<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../../css/styles.css">
 
 </head>
 
@@ -16,33 +16,10 @@
 <body>
 
 
-<header>
-
-<a class="logo-link" href="../../index.html">
-
-<h1>🚨 Emergency Unit</h1>
-
-</a>
-
-<p>Learning how to stay safe and make safe choices</p>
-
-</header>
+<div id="header"></div>
 
 
-
-
-
-<nav class="main-nav">
-
-<a class="button home-button" href="../../index.html">
-
-🏠 Home
-
-</a>
-
-</nav>
-
-
+<div id="navigation"></div>
 
 
 
@@ -53,24 +30,19 @@
 
 
 
-
 <div class="unit-card">
 
-<h2>🚨 Welcome to the Emergency Unit!</h2>
-
+<h2>💙 Blue Group: Emergency Unit</h2>
 
 <p>
-In this unit, students will learn what emergencies are, who can help, and what to do to stay safe.
+Welcome to your emergency safety lessons!
 </p>
-
 
 <p>
-Choose your group to begin.
+This week we will learn about emergencies, helpers, safety plans, and making safe choices.
 </p>
 
-
 </div>
-
 
 
 
@@ -80,75 +52,35 @@ Choose your group to begin.
 
 <div class="unit-card">
 
-<h2>Choose Your Group</h2>
+<h2>📅 This Week</h2>
 
 
-<a class="button" href="blue-group/index.html">
-
-💙 Blue Group
-
+<a class="button" href="monday.html">
+🚨 Monday: What Is An Emergency?
 </a>
 
 
-
-<a class="button" href="green-group/index.html">
-
-💚 Green Group
-
+<a class="button" href="tuesday.html">
+🚒 Tuesday: Community Helpers
 </a>
 
 
-</div>
-
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>📅 Weekly Lessons</h2>
-
-
-<a class="button" href="blue-group/monday.html">
-
-Monday 🚨
-
+<a class="button" href="wednesday.html">
+🏫 Wednesday: Safety Drills
 </a>
 
 
-<a class="button" href="blue-group/tuesday.html">
-
-Tuesday 🚒
-
+<a class="button" href="thursday.html">
+⭐ Thursday: Emergency Response
 </a>
 
 
-<a class="button" href="blue-group/wednesday.html">
-
-Wednesday 🏫
-
-</a>
-
-
-<a class="button" href="blue-group/thursday.html">
-
-Thursday ⭐
-
-</a>
-
-
-<a class="button" href="blue-group/friday.html">
-
-Friday 🏆
-
+<a class="button" href="friday.html">
+🏆 Friday: Emergency Expert Challenge
 </a>
 
 
 </div>
-
 
 
 
@@ -163,15 +95,15 @@ Friday 🏆
 
 <ul>
 
-<li>🚨 Recognizing emergencies</li>
+<li>Recognizing emergencies</li>
 
-<li>👂 Listening to directions</li>
+<li>Following directions</li>
 
-<li>🙋 Asking trusted adults for help</li>
+<li>Listening to adults</li>
 
-<li>🚶 Following safety plans</li>
+<li>Asking for help</li>
 
-<li>😌 Staying calm</li>
+<li>Making safe choices</li>
 
 </ul>
 
@@ -184,14 +116,11 @@ Friday 🏆
 
 
 
+<a class="button" href="../../index.html">
 
-<a class="button home-button" href="../../index.html">
-
-🏠 Back to Homepage
+⬅ Back to Emergency Unit
 
 </a>
-
-
 
 
 
@@ -202,14 +131,38 @@ Friday 🏆
 
 
 
+<div id="footer"></div>
 
-<footer>
 
-<p>
-🚨 Social Skills Interactive
-</p>
 
-</footer>
+
+
+
+<script src="../../../js/components.js"></script>
+
+
+<script>
+
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+</script>
 
 
 
