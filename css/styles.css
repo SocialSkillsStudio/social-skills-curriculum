@@ -1,9 +1,14 @@
-/* Social Skills Interactive Website */
+/* =========================
+   Social Skills Interactive
+   Main Styles
+========================= */
 
+
+/* General Page Setup */
 
 body {
 
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f7fb;
     margin: 0;
     padding: 0;
@@ -12,22 +17,104 @@ body {
 }
 
 
+
+/* =========================
+   Header
+========================= */
+
+
 header {
 
     background-color: #ffffff;
     text-align: center;
     padding: 25px;
-    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
 
 }
+
+
+
+.logo-link {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+
+.logo-link:hover {
+
+    opacity: .85;
+
+}
+
 
 
 header h1 {
 
-    margin-bottom: 10px;
+    margin: 0;
     font-size: 36px;
 
 }
+
+
+
+header p {
+
+    margin-top: 8px;
+    font-size: 18px;
+
+}
+
+
+
+
+
+/* =========================
+   Navigation
+========================= */
+
+
+.main-nav {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+
+}
+
+
+
+.main-nav a {
+
+    text-decoration: none;
+    background-color: white;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+
+}
+
+
+
+.main-nav a:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+/* =========================
+   Main Content
+========================= */
 
 
 main {
@@ -40,15 +127,20 @@ main {
 
 
 
+
+
+/* =========================
+   Lesson Cards
+========================= */
+
+
 .unit-card {
 
     background-color: white;
-    border-radius: 20px;
     padding: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-
-    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
 
 }
 
@@ -62,28 +154,19 @@ main {
 
 
 
-textarea {
+.unit-card h3 {
 
-    width: 90%;
-    max-width: 600px;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    font-size: 16px;
+    margin-top: 25px;
 
 }
 
 
 
-iframe {
 
-    width: 100%;
-    max-width: 700px;
-    height: 395px;
-    border-radius: 15px;
 
-}
-
+/* =========================
+   Buttons
+========================= */
 
 
 .button {
@@ -92,18 +175,12 @@ iframe {
     background-color: #4a90e2;
     color: white;
     text-decoration: none;
-
     padding: 12px 20px;
-
-    border-radius: 12px;
-
-    margin-top: 15px;
-
-    font-size: 18px;
-
-    cursor: pointer;
-
+    border-radius: 10px;
+    margin: 8px;
     border: none;
+    cursor: pointer;
+    font-size: 16px;
 
 }
 
@@ -117,44 +194,85 @@ iframe {
 
 
 
-input[type="radio"] {
 
-    margin: 10px;
+
+/* =========================
+   Forms
+========================= */
+
+
+textarea {
+
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 16px;
 
 }
 
 
 
+input[type="radio"] {
+
+    margin-right: 8px;
+
+}
+
+
+
+
+
 label {
 
-    font-size: 18px;
     line-height: 2;
 
 }
 
 
 
-ul {
 
-    line-height: 1.8;
+
+/* =========================
+   Videos
+========================= */
+
+
+iframe {
+
+    max-width: 100%;
+    border-radius: 12px;
 
 }
 
+
+
+
+
+/* =========================
+   Footer
+========================= */
 
 
 footer {
 
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    background-color: white;
+    border-top: 2px solid #ddd;
 
 }
 
 
 
 
-/* Smaller screens like Chromebooks/tablets */
+/* =========================
+   Mobile Friendly
+========================= */
 
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:600px){
 
 
 header h1 {
@@ -164,23 +282,25 @@ header h1 {
 }
 
 
-main {
+.main-nav {
 
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.button {
+
+    width: 80%;
+    text-align: center;
 
 }
 
 
 .unit-card {
 
-    padding: 15px;
-
-}
-
-
-iframe {
-
-    height: 250px;
+    padding: 18px;
 
 }
 
