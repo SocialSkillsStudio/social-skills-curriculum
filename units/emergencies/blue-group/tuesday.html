@@ -16,13 +16,12 @@
 <body>
 
 
-<header>
+<div id="header"></div>
 
-<h1>💙 Blue Group</h1>
 
-<p>🚨 Emergency Experts</p>
+<div id="navigation"></div>
 
-</header>
+
 
 
 
@@ -30,31 +29,16 @@
 
 
 
+
+
 <div class="unit-card">
 
 <h2>🚒 Tuesday: Community Helpers</h2>
 
-<p>
-Today we will learn about people who help us during emergencies.
-</p>
-
-</div>
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>💭 Think About It</h2>
 
 <p>
-Who helps us when something dangerous happens?
+Today we will learn about the people who help us during emergencies.
 </p>
-
-
-<textarea rows="4" cols="40" placeholder="Type your answer here..."></textarea>
 
 
 </div>
@@ -64,40 +48,70 @@ Who helps us when something dangerous happens?
 
 
 
+
+
 <div class="unit-card">
 
-<h2>👀 Watch & Learn</h2>
-
-<p>
-Watch videos about community helpers who keep people safe.
-</p>
+<h2>⭐ Who Helps Us?</h2>
 
 
 <p>
-Learn about:
+Many people work together to keep us safe.
 </p>
 
 
 <ul>
 
-<li>🚒 Firefighters</li>
+<li>🚒 Firefighters help during fires and rescues.</li>
 
-<li>🚑 Paramedics</li>
+<li>🚑 Paramedics help people who are hurt or sick.</li>
 
-<li>👮 Police Officers</li>
+<li>👮 Police officers help keep people safe.</li>
 
-<li>📞 911 Dispatchers</li>
+<li>👩‍🏫 Teachers and trusted adults help us follow safety plans.</li>
 
 </ul>
 
 
-<a class="button" 
-href="https://www.pbs.org/show/meet-helpers/" 
-target="_blank">
+</div>
 
-Watch Meet the Helpers
 
-</a>
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎥 Watch and Learn</h2>
+
+
+<p>
+Watch the video and think about:
+</p>
+
+
+<ul>
+
+<li>Who is helping?</li>
+
+<li>What tools do helpers use?</li>
+
+<li>How do helpers keep people safe?</li>
+
+</ul>
+
+
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/JdKG_L5YuB8"
+title="When and How to Call 911"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
 
 </div>
@@ -111,91 +125,77 @@ Watch Meet the Helpers
 
 <div class="unit-card">
 
-<h2>🎮 Play</h2>
-
-<p>
-Match the emergency with the person who can help.
-</p>
-
-
-<a class="button" href="../../../games/community-helper-match/index.html">
-
-Community Helper Matching Game
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>✏️ Research a Community Helper</h2>
+<h2>🧩 Match the Helper</h2>
 
 
 <p>
-Choose ONE helper to learn about.
+Choose the person who can help.
 </p>
 
 
-<label>
-<input type="radio" name="helper">
+
+
+
+<h3>🔥 There is a fire.</h3>
+
+
+<button class="button" onclick="answer(true,'q1')">
 🚒 Firefighter
-</label>
-
-<br>
+</button>
 
 
-<label>
-<input type="radio" name="helper">
+<button class="button" onclick="answer(false,'q1')">
+🎮 Video Game Player
+</button>
+
+
+<p id="q1"></p>
+
+
+
+
+
+
+
+<h3>🤕 Someone is hurt.</h3>
+
+
+<button class="button" onclick="answer(true,'q2')">
 🚑 Paramedic
-</label>
-
-<br>
+</button>
 
 
-<label>
-<input type="radio" name="helper">
-👮 Police Officer
-</label>
-
-<br>
+<button class="button" onclick="answer(false,'q2')">
+🧸 Toy Maker
+</button>
 
 
-<label>
-<input type="radio" name="helper">
-📞 911 Dispatcher
-</label>
+<p id="q2"></p>
 
 
 
 
-<h3>What is their job?</h3>
-
-<textarea rows="3" cols="40"></textarea>
 
 
 
-<h3>What emergencies do they help with?</h3>
-
-<textarea rows="3" cols="40"></textarea>
+<h3>😟 I feel scared at school.</h3>
 
 
+<button class="button" onclick="answer(true,'q3')">
+👩‍🏫 Trusted Adult
+</button>
 
-<h3>Why are they important?</h3>
 
-<textarea rows="3" cols="40"></textarea>
+<button class="button" onclick="answer(false,'q3')">
+🙈 Hide and say nothing
+</button>
+
+
+<p id="q3"></p>
 
 
 
 </div>
-
 
 
 
@@ -206,70 +206,63 @@ Choose ONE helper to learn about.
 
 <div class="unit-card">
 
-<h2>⭐ Scenario Practice</h2>
+<h2>🎮 Helper Challenge</h2>
 
 
 <p>
-A student falls on the playground and is badly hurt. Who can help?
+Pick the best helper for each situation.
 </p>
 
 
-<label>
-<input type="radio" name="scenario">
-🚒 Firefighter
-</label>
-
-<br>
+<h3>
+Someone needs help crossing a dangerous area.
+</h3>
 
 
-<label>
-<input type="radio" name="scenario">
-🚑 Paramedic
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="scenario">
-📞 911 Dispatcher
-</label>
+<textarea rows="3" cols="40" placeholder="Who can help?"></textarea>
 
 
 
-<br><br>
+<h3>
+Someone smells smoke in a building.
+</h3>
 
 
-
-<p>
-A classroom has smoke coming from a trash can. Who can help?
-</p>
-
-
-<label>
-<input type="radio" name="scenario2">
-🚒 Firefighter
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="scenario2">
-👮 Police Officer
-</label>
-
-<br>
-
-
-<label>
-<input type="radio" name="scenario2">
-Teacher
-</label>
+<textarea rows="3" cols="40" placeholder="Who can help?"></textarea>
 
 
 
 </div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Remember</h2>
+
+
+<p>
+Helpers are here to keep us safe.
+</p>
+
+
+<p>
+When we need help:
+</p>
+
+
+<p>
+🙋 Tell a trusted adult
+</p>
+
+
+</div>
+
 
 
 
@@ -285,18 +278,75 @@ Teacher
 
 
 
+
+
 </main>
 
 
 
 
-<footer>
 
-<p>
-Social Skills Interactive 💙
-</p>
 
-</footer>
+
+<div id="footer"></div>
+
+
+
+
+
+
+
+<script src="../../../js/components.js"></script>
+
+
+<script>
+
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+
+
+function answer(correct,id){
+
+
+if(correct){
+
+document.getElementById(id).innerHTML =
+"⭐ Correct! Great job!";
+
+}
+
+else{
+
+document.getElementById(id).innerHTML =
+"Try again. Think about who helps.";
+
+}
+
+
+}
+
+
+</script>
+
+
+
 
 
 
