@@ -11,9 +11,3 @@ document.getElementById(id).innerHTML = data;
 });
 
 }
-
-
-loadComponent(
-"navigation",
-"../../../components/navigation.html"
-);
