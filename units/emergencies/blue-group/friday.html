@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blue Group Friday - Emergency Expert Challenge</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💙 Blue Group</h1>
+
+<p>🚨 Emergency Expert Challenge</p>
+
+</header>
+
+
+
+
+<nav class="main-nav">
+
+<a class="home-button" href="../../../index.html">
+🏠 Home
+</a>
+
+</nav>
+
+
+
+
+
+
+<main>
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🏆 Friday: Emergency Expert Challenge</h2>
+
+
+<p>
+You learned a lot this week! Today you will show what you know.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Review: What Did We Learn?</h2>
+
+
+<ul>
+
+<li>🚨 An emergency is a situation where someone needs help.</li>
+
+<li>👮🚒🚑 Helpers keep people safe.</li>
+
+<li>👂 We listen to directions.</li>
+
+<li>🤫 We use calm voices.</li>
+
+<li>🚶 We follow safety instructions.</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Emergency Expert Quiz</h2>
+
+
+
+<h3>1. What is an emergency?</h3>
+
+
+<button class="button" onclick="answer(true,'q1')">
+Something that needs help right away
+</button>
+
+
+<button class="button" onclick="answer(false,'q1')">
+Something fun to do
+</button>
+
+
+<p id="q1"></p>
+
+
+
+
+
+
+
+<h3>2. Who can help during a fire?</h3>
+
+
+<button class="button" onclick="answer(true,'q2')">
+Firefighter
+</button>
+
+
+<button class="button" onclick="answer(false,'q2')">
+Someone who ignores it
+</button>
+
+
+<p id="q2"></p>
+
+
+
+
+
+
+
+<h3>3. During a drill I should...</h3>
+
+
+<button class="button" onclick="answer(true,'q3')">
+Listen and follow directions
+</button>
+
+
+<button class="button" onclick="answer(false,'q3')">
+Run around
+</button>
+
+
+<p id="q3"></p>
+
+
+
+
+
+
+
+<h3>4. If I need help I should...</h3>
+
+
+<button class="button" onclick="answer(true,'q4')">
+Tell a trusted adult
+</button>
+
+
+<button class="button" onclick="answer(false,'q4')">
+Keep it secret
+</button>
+
+
+<p id="q4"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🚨 Final Emergency Scenario</h2>
+
+
+<p>
+Your class hears the fire alarm. What should you do?
+</p>
+
+
+<textarea rows="4" cols="40" placeholder="Write your answer here..."></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🏆 Emergency Expert Certificate</h2>
+
+
+<p>
+I am an Emergency Expert because I can:
+</p>
+
+
+<textarea rows="4" cols="40"></textarea>
+
+
+</div>
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎉 Great Job!</h2>
+
+
+<p>
+You completed the Emergency Unit!
+</p>
+
+
+<p>
+⭐ You practiced staying safe and helping others.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<a class="button" href="index.html">
+
+⬅ Back to Blue Group
+
+</a>
+
+
+</main>
+
+
+
+
+
+
+
+
+<script>
+
+function answer(correct,id){
+
+
+if(correct){
+
+document.getElementById(id).innerHTML =
+"⭐ Correct! Great job!";
+
+}
+
+else{
+
+document.getElementById(id).innerHTML =
+"Try again. Think about safety.";
+
+}
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+🚨 Social Skills Interactive
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
