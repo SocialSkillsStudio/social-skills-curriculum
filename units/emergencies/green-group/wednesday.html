@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Wednesday - School Safety Drills</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💚 Green Group</h1>
+
+<p>🚨 Emergency Experts</p>
+
+</header>
+
+
+
+<main>
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🏫 Wednesday: School Safety</h2>
+
+<p>
+Today we will learn how to stay safe during a school drill.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>💭 What Is A Drill?</h2>
+
+<p>
+A drill is practice for staying safe.
+</p>
+
+
+<p>
+We practice so we know what to do.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>👀 Watch & Learn</h2>
+
+
+<p>
+Watch how students practice staying safe during a lockdown drill.
+</p>
+
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/vyLWnLd63KA"
+title="Lockdown Drill Safety"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Safe Choices</h2>
+
+
+<p>
+During a drill, I can:
+</p>
+
+
+<ul>
+
+<li>👂 Listen</li>
+
+<li>🤫 Be quiet</li>
+
+<li>🚶 Follow my teacher</li>
+
+<li>🧘 Stay calm</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Safe or Not Safe?</h2>
+
+
+<p>
+Is this a safe choice?
+</p>
+
+
+
+
+
+<h3>👂 The teacher says "come with me." The student follows.</h3>
+
+
+<button class="button" onclick="check(true,'feedback1')">
+✅ Safe
+</button>
+
+
+<button class="button" onclick="check(false,'feedback1')">
+❌ Not Safe
+</button>
+
+
+<p id="feedback1"></p>
+
+
+
+
+
+
+
+
+<h3>🗣️ The teacher says "quiet." The student yells.</h3>
+
+
+<button class="button" onclick="check(false,'feedback2')">
+✅ Safe
+</button>
+
+
+<button class="button" onclick="check(true,'feedback2')">
+❌ Not Safe
+</button>
+
+
+<p id="feedback2"></p>
+
+
+
+
+
+
+
+
+<h3>🤫 The student uses a quiet voice.</h3>
+
+
+<button class="button" onclick="check(true,'feedback3')">
+✅ Safe
+</button>
+
+
+<button class="button" onclick="check(false,'feedback3')">
+❌ Not Safe
+</button>
+
+
+<p id="feedback3"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>✏️ Practice</h2>
+
+
+
+<h3>During a drill, I should...</h3>
+
+
+
+<label>
+
+<input type="radio" name="q1">
+
+👂 Listen
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q1">
+
+🗣️ Yell
+
+</label>
+
+
+
+
+
+
+<h3>My voice should be...</h3>
+
+
+
+<label>
+
+<input type="radio" name="q2">
+
+🤫 Quiet
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q2">
+
+📢 Loud
+
+</label>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Remember</h2>
+
+
+<p>
+I can stay safe by:
+</p>
+
+
+<ul>
+
+<li>👂 Listening</li>
+
+<li>🤫 Being quiet</li>
+
+<li>🚶 Following directions</li>
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<a class="button" href="index.html">
+
+⬅ Back to Green Group
+
+</a>
+
+
+
+</main>
+
+
+
+
+
+
+<script>
+
+
+function check(correct, location){
+
+
+let message = document.getElementById(location);
+
+
+
+if(correct){
+
+message.innerHTML = "⭐ Great job! That is a safe choice.";
+
+}
+
+
+else{
+
+message.innerHTML = "Try again. Think about staying safe.";
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+Social Skills Interactive 💚
+</p>
+
+</footer>
+
+
+
+
+</body>
+
+</html>
