@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Green Group Thursday - Emergency Safety</title>
+<title>Green Group Thursday - Staying Safe</title>
 
 <link rel="stylesheet" href="../../../css/styles.css">
 
@@ -20,22 +20,48 @@
 
 <h1>💚 Green Group</h1>
 
-<p>🚨 Emergency Experts</p>
+<p>🚨 Emergency Unit</p>
 
 </header>
+
+
+
+
+
+<nav class="main-nav">
+
+<a class="home-button" href="../../../index.html">
+
+🏠 Home
+
+</a>
+
+</nav>
+
+
+
 
 
 
 <main>
 
 
+
+
 <div class="unit-card">
 
-<h2>🚨 Thursday: Staying Safe</h2>
+<h2>🚨 Thursday: Staying Safe During Emergencies</h2>
+
 
 <p>
-Today we will practice safe choices during emergencies.
+Today we practice safe choices.
 </p>
+
+
+<h3>
+🛑 Stop → 👂 Listen → 🚶 Follow Directions → 🙋 Tell An Adult
+</h3>
+
 
 </div>
 
@@ -45,93 +71,104 @@ Today we will practice safe choices during emergencies.
 
 
 
+
 <div class="unit-card">
 
-<h2>⭐ My Safety Steps</h2>
+<h2>🎥 Video: Staying Safe</h2>
+
+
+<p>
+Watch the video and look for safe choices.
+</p>
+
+
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/iuJE36d2eS0"
+title="Emergency Safety"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>📞 Video: Getting Help</h2>
+
+
+<p>
+Watch to learn who can help us.
+</p>
+
+
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/JdKG_L5YuB8"
+title="When and How to Call 911"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Who Can Help?</h2>
+
+
+<p>
+Match the emergency with the helper.
+</p>
+
+
+<p>
+🔥 Fire → __________
+</p>
+
+
+<p>
+🤕 Hurt → __________
+</p>
+
+
+<p>
+😟 Need help → __________
+</p>
 
 
 <ul>
 
-<li>🛑 Stop</li>
+<li>🚒 Firefighter</li>
 
-<li>👂 Listen</li>
+<li>🚑 Ambulance</li>
 
-<li>🚶 Follow directions</li>
-
-<li>🙋 Tell an adult</li>
+<li>👩‍🏫 Trusted Adult</li>
 
 </ul>
 
 
-</div>
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>🎮 Good Choice or Not?</h2>
-
-
-
-<h3>🔥 There is smoke. I tell my teacher.</h3>
-
-
-<button class="button" onclick="check(true,'a1')">
-⭐ Good Choice
-</button>
-
-
-<button class="button" onclick="check(false,'a1')">
-❌ Not Safe
-</button>
-
-
-<p id="a1"></p>
-
-
-
-
-
-
-<h3>🚨 My teacher gives directions. I listen.</h3>
-
-
-<button class="button" onclick="check(true,'a2')">
-⭐ Good Choice
-</button>
-
-
-<button class="button" onclick="check(false,'a2')">
-❌ Not Safe
-</button>
-
-
-<p id="a2"></p>
-
-
-
-
-
-
-<h3>🗣️ The teacher says quiet. I yell.</h3>
-
-
-<button class="button" onclick="check(false,'a3')">
-⭐ Good Choice
-</button>
-
-
-<button class="button" onclick="check(true,'a3')">
-❌ Not Safe
-</button>
-
-
-<p id="a3"></p>
-
+<textarea rows="3" cols="40"></textarea>
 
 
 </div>
@@ -145,64 +182,96 @@ Today we will practice safe choices during emergencies.
 
 <div class="unit-card">
 
-<h2>✏️ Practice</h2>
+
+<h2>🎮 Safe Choice Game</h2>
+
+
+<h3>🔥 I see smoke.</h3>
+
+
+<button class="button" onclick="check(true,'one')">
+🙋 Tell an adult
+</button>
+
+
+<button class="button" onclick="check(false,'one')">
+🏃 Run away
+</button>
+
+
+<p id="one"></p>
+
+
+
+
+
+
+
+<h3>👂 My teacher gives directions.</h3>
+
+
+<button class="button" onclick="check(true,'two')">
+⭐ Listen
+</button>
+
+
+<button class="button" onclick="check(false,'two')">
+🗣️ Yell
+</button>
+
+
+<p id="two"></p>
+
+
+
+
+
+
+
+<h3>🚨 The alarm goes off.</h3>
+
+
+<button class="button" onclick="check(true,'three')">
+🚶 Follow teacher
+</button>
+
+
+<button class="button" onclick="check(false,'three')">
+🎮 Keep playing
+</button>
+
+
+<p id="three"></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Emergency Decision Challenge</h2>
 
 
 <p>
-When I need help, I can tell:
+Practice making safe choices.
 </p>
 
 
-<label>
+<a class="button" href="../../../games/emergency-decision-game/index.html">
 
-<input type="radio" name="q1">
+🚨 Start Game
 
-An adult
-
-</label>
-
-
-<br>
-
-
-<label>
-
-<input type="radio" name="q1">
-
-No one
-
-</label>
-
-
-<br><br>
-
-
-<p>
-My voice should be:</p>
-
-
-<label>
-
-<input type="radio" name="q2">
-
-Quiet
-
-</label>
-
-
-<br>
-
-
-<label>
-
-<input type="radio" name="q2">
-
-Very loud
-
-</label>
+</a>
 
 
 </div>
+
 
 
 
@@ -212,15 +281,20 @@ Very loud
 
 <div class="unit-card">
 
-<h2>⭐ I Can Stay Safe!</h2>
+<h2>⭐ I Am An Emergency Expert!</h2>
 
 
 <p>
-I can listen, stay calm, and follow directions.
+I stay safe by:
 </p>
 
 
+<textarea rows="3" cols="40"></textarea>
+
+
 </div>
+
+
 
 
 
@@ -234,40 +308,55 @@ I can listen, stay calm, and follow directions.
 
 
 
+
 </main>
+
+
+
+
 
 
 
 
 <script>
 
+
 function check(correct,id){
+
 
 if(correct){
 
 document.getElementById(id).innerHTML =
-"⭐ Great job!";
+"⭐ Great job! Safe choice!";
 
 }
 
 else{
 
 document.getElementById(id).innerHTML =
-"Try again. Think safe choice.";
+"Try again. Think about staying safe.";
 
 }
 
+
 }
+
 
 </script>
 
 
 
+
+
+
 <footer>
 
-<p>Social Skills Interactive 💚</p>
+<p>
+🚨 Social Skills Interactive
+</p>
 
 </footer>
+
 
 
 </body>
