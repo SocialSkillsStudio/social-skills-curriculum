@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emergency Decision Challenge</title>
+
+<link rel="stylesheet" href="../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🚨 Emergency Decision Challenge</h1>
+
+<p>Make the safe choice!</p>
+
+</header>
+
+
+
+
+<main>
+
+
+<div class="unit-card">
+
+
+<h2 id="scenario"></h2>
+
+
+<p>
+What should you do?
+</p>
+
+
+
+<button class="button" onclick="choose(0)" id="choice0"></button>
+
+<br>
+
+
+<button class="button" onclick="choose(1)" id="choice1"></button>
+
+<br>
+
+
+<button class="button" onclick="choose(2)" id="choice2"></button>
+
+
+
+<h2 id="feedback"></h2>
+
+
+
+<p>
+⭐ Score:
+<span id="score">0</span>/8
+</p>
+
+
+</div>
+
+
+
+
+<a class="button" href="../../index.html">
+
+🏠 Home
+
+</a>
+
+
+
+</main>
+
+
+
+
+
+<script>
+
+
+let questions = [
+
+
+{
+scenario:"🔥 You smell smoke in your classroom.",
+choices:[
+"Tell the teacher",
+"Ignore it",
+"Run around the room"
+],
+answer:0
+},
+
+
+
+{
+scenario:"🚨 The fire alarm goes off.",
+choices:[
+"Walk with your teacher",
+"Hide from everyone",
+"Start yelling"
+],
+answer:0
+},
+
+
+
+{
+scenario:"🤕 A student gets hurt on the playground.",
+choices:[
+"Tell an adult",
+"Walk away",
+"Laugh"
+],
+answer:0
+},
+
+
+
+{
+scenario:"👂 Your teacher gives directions during an emergency.",
+choices:[
+"Listen and follow directions",
+"Argue",
+"Do something else"
+],
+answer:0
+},
+
+
+
+{
+scenario:"😟 You feel scared during an emergency.",
+choices:[
+"Take a breath and stay calm",
+"Run away",
+"Scream"
+],
+answer:0
+},
+
+
+
+{
+scenario:"📞 Someone needs emergency help.",
+choices:[
+"Tell an adult",
+"Keep it a secret",
+"Ignore it"
+],
+answer:0
+},
+
+
+
+{
+scenario:"🏫 You are practicing a lockdown drill.",
+choices:[
+"Use a quiet voice",
+"Talk loudly",
+"Play around"
+],
+answer:0
+},
+
+
+
+{
+scenario:"🚶 Your teacher tells you where to go.",
+choices:[
+"Follow the teacher",
+"Run ahead",
+"Do not listen"
+],
+answer:0
+}
+
+
+];
+
+
+
+let current = 0;
+
+let score = 0;
+
+
+
+function loadQuestion(){
+
+
+document.getElementById("scenario").innerHTML =
+questions[current].scenario;
+
+
+document.getElementById("choice0").innerHTML =
+questions[current].choices[0];
+
+
+document.getElementById("choice1").innerHTML =
+questions[current].choices[1];
+
+
+document.getElementById("choice2").innerHTML =
+questions[current].choices[2];
+
+
+document.getElementById("feedback").innerHTML="";
+
+
+}
+
+
+
+
+
+function choose(choice){
+
+
+if(choice === questions[current].answer){
+
+
+score++;
+
+
+document.getElementById("score").innerHTML =
+score;
+
+
+document.getElementById("feedback").innerHTML =
+"⭐ Great job! That is a safe choice!";
+
+
+}
+
+else{
+
+
+document.getElementById("feedback").innerHTML =
+"Try again. Think: How can I stay safe?";
+
+
+return;
+
+
+}
+
+
+
+current++;
+
+
+
+if(current < questions.length){
+
+
+setTimeout(loadQuestion,1200);
+
+
+}
+
+else{
+
+
+document.getElementById("scenario").innerHTML =
+"🎉 You completed the Emergency Challenge!";
+
+
+document.getElementById("choice0").style.display="none";
+
+document.getElementById("choice1").style.display="none";
+
+document.getElementById("choice2").style.display="none";
+
+
+document.getElementById("feedback").innerHTML =
+"⭐ You are an Emergency Expert!";
+
+
+}
+
+
+}
+
+
+
+loadQuestion();
+
+
+</script>
+
+
+
+
+<footer>
+
+<p>
+🚨 Social Skills Interactive
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
