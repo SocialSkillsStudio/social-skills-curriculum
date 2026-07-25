@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Tuesday - Community Helpers</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💚 Green Group</h1>
+
+<p>🚨 Emergency Experts</p>
+
+</header>
+
+
+
+<main>
+
+
+
+
+<div class="unit-card">
+
+<h2>🚒 Tuesday: Community Helpers</h2>
+
+<p>
+Today we will learn about people who help us.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>💭 Who Helps Me?</h2>
+
+<p>
+When something is dangerous, we can ask a helper for help.
+</p>
+
+
+<ul>
+
+<li>🚒 Firefighter helps with fires</li>
+
+<li>🚑 Paramedic helps when someone is hurt</li>
+
+<li>👮 Police officer helps keep people safe</li>
+
+<li>📞 911 dispatcher sends help</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>👀 Watch & Learn</h2>
+
+<p>
+Watch and learn about community helpers.
+</p>
+
+
+<a class="button"
+href="https://www.youtube.com/watch?v=kvwB-NwrEm4"
+target="_blank">
+
+Watch Community Helpers Video
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Who Can Help?</h2>
+
+<p>
+Choose the helper who can help.
+</p>
+
+
+
+
+<h3>🔥 There is a fire.</h3>
+
+
+<button class="button" onclick="checkAnswer(true, 'feedback1')">
+🚒 Firefighter
+</button>
+
+
+<button class="button" onclick="checkAnswer(false, 'feedback1')">
+👮 Police Officer
+</button>
+
+
+<p id="feedback1"></p>
+
+
+
+
+
+<h3>🚑 Someone is hurt.</h3>
+
+
+<button class="button" onclick="checkAnswer(true, 'feedback2')">
+🚑 Paramedic
+</button>
+
+
+<button class="button" onclick="checkAnswer(false, 'feedback2')">
+🚒 Firefighter
+</button>
+
+
+<p id="feedback2"></p>
+
+
+
+
+
+<h3>🚨 Someone needs help staying safe.</h3>
+
+
+<button class="button" onclick="checkAnswer(true, 'feedback3')">
+👮 Police Officer
+</button>
+
+
+<button class="button" onclick="checkAnswer(false, 'feedback3')">
+🧑‍🍳 Chef
+</button>
+
+
+<p id="feedback3"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>✏️ Practice</h2>
+
+
+
+<h3>Who helps with a fire?</h3>
+
+
+<label>
+
+<input type="radio" name="q1">
+
+🚒 Firefighter
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q1">
+
+Teacher
+
+</label>
+
+
+
+
+
+<h3>Who helps when someone is hurt?</h3>
+
+
+<label>
+
+<input type="radio" name="q2">
+
+🚑 Paramedic
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q2">
+
+Mail carrier
+
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Remember</h2>
+
+
+<p>
+When I need help:
+</p>
+
+
+<ul>
+
+<li>🙋 Tell an adult</li>
+
+<li>👂 Listen to directions</li>
+
+<li>🤫 Use a calm voice</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<a class="button" href="index.html">
+
+⬅ Back to Green Group
+
+</a>
+
+
+
+
+</main>
+
+
+
+
+
+<script>
+
+
+function checkAnswer(correct, location){
+
+let message = document.getElementById(location);
+
+
+if(correct){
+
+message.innerHTML = "⭐ Great job!";
+
+}
+
+else{
+
+message.innerHTML = "Try again. Think about who helps.";
+
+}
+
+}
+
+
+</script>
+
+
+
+
+
+
+<footer>
+
+<p>
+Social Skills Interactive 💚
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
