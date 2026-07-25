@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community Helper Match</title>
+
+<link rel="stylesheet" href="../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🚒 Community Helper Match</h1>
+
+<p>Who can help?</p>
+
+</header>
+
+
+
+
+<main>
+
+
+
+<div class="unit-card">
+
+
+<h2 id="scenario"></h2>
+
+
+<p>
+Choose the person who can help.
+</p>
+
+
+
+<button class="button" onclick="answer(0)" id="choice0"></button>
+
+
+<br>
+
+
+<button class="button" onclick="answer(1)" id="choice1"></button>
+
+
+<br>
+
+
+<button class="button" onclick="answer(2)" id="choice2"></button>
+
+
+
+<h2 id="feedback"></h2>
+
+
+
+<h3>
+⭐ Score: <span id="score">0</span>/6
+</h3>
+
+
+</div>
+
+
+
+
+
+
+<a class="button" href="../../units/emergencies/blue-group/tuesday.html">
+
+⬅ Back to Lesson
+
+</a>
+
+
+
+</main>
+
+
+
+
+
+<script>
+
+
+let questions = [
+
+
+{
+
+scenario:"🔥 There is a fire in a building.",
+
+choices:[
+"🚒 Firefighter",
+"🚑 Paramedic",
+"👮 Police Officer"
+],
+
+answer:0
+
+},
+
+
+
+{
+
+scenario:"🤕 Someone is hurt and needs medical help.",
+
+choices:[
+"🚒 Firefighter",
+"🚑 Paramedic",
+"👮 Police Officer"
+],
+
+answer:1
+
+},
+
+
+
+{
+
+scenario:"🚨 Someone is unsafe and needs help.",
+
+choices:[
+"👮 Police Officer",
+"🚒 Firefighter",
+"📞 911 Dispatcher"
+],
+
+answer:0
+
+},
+
+
+
+{
+
+scenario:"📞 Someone calls for emergency help.",
+
+choices:[
+"📞 911 Dispatcher",
+"🚑 Paramedic",
+"🚒 Firefighter"
+],
+
+answer:0
+
+},
+
+
+
+{
+
+scenario:"🚗 There is a car accident.",
+
+choices:[
+"🚑 Paramedic",
+"Teacher",
+"Chef"
+],
+
+answer:0
+
+},
+
+
+
+{
+
+scenario:"🔥 Smoke is coming from a classroom.",
+
+choices:[
+"🚒 Firefighter",
+"Mail Carrier",
+"Coach"
+],
+
+answer:0
+
+}
+
+
+];
+
+
+
+let current = 0;
+
+let score = 0;
+
+
+
+function loadQuestion(){
+
+
+document.getElementById("scenario").innerHTML =
+questions[current].scenario;
+
+
+
+document.getElementById("choice0").innerHTML =
+questions[current].choices[0];
+
+
+document.getElementById("choice1").innerHTML =
+questions[current].choices[1];
+
+
+document.getElementById("choice2").innerHTML =
+questions[current].choices[2];
+
+
+document.getElementById("feedback").innerHTML="";
+
+
+}
+
+
+
+
+
+function answer(choice){
+
+
+
+if(choice === questions[current].answer){
+
+
+score++;
+
+document.getElementById("score").innerHTML =
+score;
+
+
+document.getElementById("feedback").innerHTML =
+"⭐ Great job!";
+
+
+}
+
+else{
+
+
+document.getElementById("feedback").innerHTML =
+"Try again. Think about who helps.";
+
+
+return;
+
+
+}
+
+
+
+
+current++;
+
+
+
+if(current < questions.length){
+
+
+setTimeout(loadQuestion,1000);
+
+
+}
+
+
+else{
+
+
+document.getElementById("scenario").innerHTML =
+"🎉 You finished!";
+
+
+document.getElementById("choice0").style.display="none";
+
+document.getElementById("choice1").style.display="none";
+
+document.getElementById("choice2").style.display="none";
+
+
+document.getElementById("feedback").innerHTML =
+"⭐ You are a Community Helper Expert!";
+
+
+}
+
+
+
+}
+
+
+
+loadQuestion();
+
+
+</script>
+
+
+
+</body>
+
+</html>
