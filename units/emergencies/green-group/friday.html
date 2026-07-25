@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Friday - Emergency Experts</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>💚 Green Group</h1>
+
+<p>🚨 Emergency Expert Challenge</p>
+
+</header>
+
+
+
+
+<nav class="main-nav">
+
+<a class="home-button" href="../../../index.html">
+🏠 Home
+</a>
+
+</nav>
+
+
+
+
+
+
+<main>
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🏆 Friday: Emergency Expert Challenge</h2>
+
+
+<p>
+You practiced how to stay safe!
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>⭐ Remember</h2>
+
+
+<ul>
+
+<li>👂 Listen</li>
+
+<li>🤫 Quiet voice</li>
+
+<li>🚶 Follow directions</li>
+
+<li>🙋 Tell an adult</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Safe or Not Safe?</h2>
+
+
+
+<h3>👂 I listen to my teacher.</h3>
+
+
+<button class="button" onclick="check(true,'one')">
+⭐ Safe
+</button>
+
+
+<button class="button" onclick="check(false,'one')">
+❌ Not Safe
+</button>
+
+
+<p id="one"></p>
+
+
+
+
+
+
+
+
+<h3>🗣️ I yell during a drill.</h3>
+
+
+<button class="button" onclick="check(false,'two')">
+⭐ Safe
+</button>
+
+
+<button class="button" onclick="check(true,'two')">
+❌ Not Safe
+</button>
+
+
+<p id="two"></p>
+
+
+
+
+
+
+
+
+<h3>🙋 I tell an adult when I need help.</h3>
+
+
+<button class="button" onclick="check(true,'three')">
+⭐ Safe
+</button>
+
+
+<button class="button" onclick="check(false,'three')">
+❌ Not Safe
+</button>
+
+
+<p id="three"></p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🚨 What Would You Do?</h2>
+
+
+
+<h3>🔥 You see smoke.</h3>
+
+
+<p>
+I should:
+</p>
+
+
+<textarea rows="3" cols="40"></textarea>
+
+
+
+
+
+
+<h3>😟 You feel scared.</h3>
+
+
+<p>
+I can:
+</p>
+
+
+<textarea rows="3" cols="40"></textarea>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🏆 I Am An Emergency Expert!</h2>
+
+
+<p>
+I can stay safe by:
+</p>
+
+
+<textarea rows="4" cols="40"></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎉 Great Job!</h2>
+
+
+<p>
+You finished the Emergency Unit!
+</p>
+
+
+<p>
+⭐ You know how to make safe choices.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<a class="button" href="index.html">
+
+⬅ Back to Green Group
+
+</a>
+
+
+
+</main>
+
+
+
+
+
+
+
+<script>
+
+
+function check(correct,id){
+
+
+if(correct){
+
+document.getElementById(id).innerHTML =
+"⭐ Great job!";
+
+}
+
+else{
+
+document.getElementById(id).innerHTML =
+"Try again. Think safe choice.";
+
+}
+
+
+}
+
+
+</script>
+
+
+
+
+
+<footer>
+
+<p>
+🚨 Social Skills Interactive
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
