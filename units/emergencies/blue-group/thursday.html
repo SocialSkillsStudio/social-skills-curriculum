@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blue Group Thursday - Emergency Safety</title>
+<title>Blue Group Thursday - Emergency Response</title>
 
 <link rel="stylesheet" href="../../../css/styles.css">
 
@@ -16,28 +16,10 @@
 <body>
 
 
-<header>
-
-<h1>💙 Blue Group</h1>
-
-<p>🚨 Emergency Unit</p>
-
-</header>
+<div id="header"></div>
 
 
-
-
-
-<nav class="main-nav">
-
-<a class="home-button" href="../../../index.html">
-
-🏠 Home
-
-</a>
-
-</nav>
-
+<div id="navigation"></div>
 
 
 
@@ -48,13 +30,14 @@
 
 
 
+
 <div class="unit-card">
 
-<h2>🚨 Thursday: What To Do During An Emergency</h2>
+<h2>🚨 Thursday: Emergency Response</h2>
 
 
 <p>
-Today we will practice what to do when something unexpected happens.
+Today we will practice what to do when an emergency happens.
 </p>
 
 
@@ -88,7 +71,7 @@ Watch the video and think about:
 
 <li>Who helps during emergencies?</li>
 
-<li>Why is it important to listen?</li>
+<li>Why is listening important?</li>
 
 </ul>
 
@@ -113,15 +96,15 @@ allowfullscreen>
 
 
 
-
 <div class="unit-card">
 
 <h2>📞 Video #2: When and How to Call 911</h2>
 
 
 <p>
-Watch the video to learn when people need emergency help.
+Learn when people need emergency help and who can respond.
 </p>
+
 
 
 <iframe
@@ -145,29 +128,37 @@ allowfullscreen>
 
 <div class="unit-card">
 
-<h2>✏️ Video Questions</h2>
-
-
-<h3>1. When should someone call 911?</h3>
-
-
-<textarea rows="3" cols="40"></textarea>
+<h2>✏️ Emergency Questions</h2>
 
 
 
+<h3>
+1. When should someone call 911?
+</h3>
 
-<h3>2. Name one person who can help in an emergency.</h3>
 
-
-<textarea rows="3" cols="40"></textarea>
+<textarea rows="3" cols="40" placeholder="Type your answer here..."></textarea>
 
 
 
 
-<h3>3. Why is it important to stay calm?</h3>
+<h3>
+2. Who can help during an emergency?
+</h3>
 
 
-<textarea rows="3" cols="40"></textarea>
+<textarea rows="3" cols="40" placeholder="Type your answer here..."></textarea>
+
+
+
+
+<h3>
+3. Why should we stay calm?
+</h3>
+
+
+<textarea rows="3" cols="40" placeholder="Type your answer here..."></textarea>
+
 
 
 </div>
@@ -185,7 +176,7 @@ allowfullscreen>
 
 
 <p>
-Practice making safe choices during emergencies.
+Practice making safe choices during different emergencies.
 </p>
 
 
@@ -207,16 +198,17 @@ Practice making safe choices during emergencies.
 
 <div class="unit-card">
 
-<h2>🧩 Emergency Steps Practice</h2>
+<h2>🧩 Put The Steps In Order</h2>
 
 
 <p>
-Put the steps in order.
+Number the steps from 1-4.
 </p>
 
 
+
 <p>
-⬜ Get help
+⬜ Follow directions
 </p>
 
 
@@ -226,17 +218,17 @@ Put the steps in order.
 
 
 <p>
-⬜ Listen
+⬜ Get help
 </p>
 
 
 <p>
-⬜ Follow directions
+⬜ Listen
 </p>
 
 
 
-<textarea rows="4" cols="40" placeholder="Write the numbers 1-4"></textarea>
+<textarea rows="4" cols="40" placeholder="Write the numbers here..."></textarea>
 
 
 </div>
@@ -258,10 +250,11 @@ One thing I can do to stay safe is:
 </p>
 
 
-<textarea rows="4" cols="40"></textarea>
+<textarea rows="4" cols="40" placeholder="Finish the sentence..."></textarea>
 
 
 </div>
+
 
 
 
@@ -278,6 +271,7 @@ One thing I can do to stay safe is:
 
 
 
+
 </main>
 
 
@@ -285,13 +279,42 @@ One thing I can do to stay safe is:
 
 
 
-<footer>
 
-<p>
-🚨 Social Skills Interactive
-</p>
+<div id="footer"></div>
 
-</footer>
+
+
+
+
+
+
+<script src="../../../js/components.js"></script>
+
+
+<script>
+
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+</script>
+
+
 
 
 
