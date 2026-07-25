@@ -4,7 +4,9 @@
 ========================= */
 
 
-/* General Page Setup */
+/* =========================
+   General Page Setup
+========================= */
 
 body {
 
@@ -17,7 +19,6 @@ body {
 }
 
 
-
 /* =========================
    Header
 ========================= */
@@ -25,10 +26,10 @@ body {
 
 header {
 
-    background-color: #ffffff;
+    background-color: white;
     text-align: center;
-    padding: 25px;
-    border-bottom: 3px solid #ddd;
+    padding: 30px;
+    border-bottom: 3px solid #d9e2f2;
 
 }
 
@@ -54,7 +55,7 @@ header {
 header h1 {
 
     margin: 0;
-    font-size: 36px;
+    font-size: 38px;
 
 }
 
@@ -62,8 +63,8 @@ header h1 {
 
 header p {
 
-    margin-top: 8px;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 20px;
 
 }
 
@@ -82,7 +83,7 @@ header p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 20px;
+    padding: 25px;
 
 }
 
@@ -90,13 +91,34 @@ header p {
 
 .main-nav a {
 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     text-decoration: none;
-    background-color: white;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #eef5ff
+    );
+
     color: #333;
-    padding: 12px 20px;
-    border-radius: 12px;
-    border: 2px solid #ddd;
-    font-size: 16px;
+
+    padding: 15px 25px;
+
+    border-radius: 18px;
+
+    border: 2px solid #c9d9f2;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    box-shadow:
+    0 4px 8px rgba(0,0,0,.12);
+
+    transition: .2s;
 
 }
 
@@ -104,9 +126,36 @@ header p {
 
 .main-nav a:hover {
 
-    transform: scale(1.05);
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 6px 12px rgba(0,0,0,.18);
 
 }
+
+
+
+
+
+/* Special Home Button */
+
+
+.home-button {
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffeaa7,
+        #ffd86b
+    ) !important;
+
+    border-color: #f0c94d !important;
+
+    color: #5a4500 !important;
+
+}
+
+
 
 
 
@@ -129,6 +178,8 @@ main {
 
 
 
+
+
 /* =========================
    Lesson Cards
 ========================= */
@@ -136,11 +187,16 @@ main {
 
 .unit-card {
 
-    background-color: white;
+    background: white;
+
     padding: 25px;
+
     margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.10);
 
 }
 
@@ -164,6 +220,8 @@ main {
 
 
 
+
+
 /* =========================
    Buttons
 ========================= */
@@ -172,15 +230,36 @@ main {
 .button {
 
     display: inline-block;
-    background-color: #4a90e2;
+
+    background:
+    linear-gradient(
+        135deg,
+        #4a90e2,
+        #6bb6ff
+    );
+
     color: white;
+
     text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 10px;
+
+    padding: 14px 24px;
+
+    border-radius: 14px;
+
     margin: 8px;
+
     border: none;
+
     cursor: pointer;
-    font-size: 16px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    box-shadow:
+    0 4px 8px rgba(0,0,0,.15);
+
+    transition: .2s;
 
 }
 
@@ -188,9 +267,13 @@ main {
 
 .button:hover {
 
-    opacity: .85;
+    transform: translateY(-2px);
+
+    opacity: .9;
 
 }
+
+
 
 
 
@@ -204,10 +287,16 @@ main {
 textarea {
 
     width: 90%;
-    padding: 10px;
-    border-radius: 8px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
     border: 1px solid #aaa;
+
     font-size: 16px;
+
+    resize: vertical;
 
 }
 
@@ -221,13 +310,15 @@ input[type="radio"] {
 
 
 
-
-
 label {
 
     line-height: 2;
 
+    font-size: 17px;
+
 }
+
+
 
 
 
@@ -241,9 +332,12 @@ label {
 iframe {
 
     max-width: 100%;
-    border-radius: 12px;
+
+    border-radius: 15px;
 
 }
+
+
 
 
 
@@ -257,12 +351,21 @@ iframe {
 footer {
 
     text-align: center;
-    padding: 30px;
+
+    padding: 35px;
+
     margin-top: 40px;
-    background-color: white;
+
+    background: white;
+
     border-top: 2px solid #ddd;
 
+    font-size: 16px;
+
 }
+
+
+
 
 
 
@@ -282,20 +385,33 @@ header h1 {
 }
 
 
+
 .main-nav {
 
     flex-direction: column;
+
     align-items: center;
 
 }
 
 
+
+.main-nav a {
+
+    width: 80%;
+
+}
+
+
+
 .button {
 
     width: 80%;
+
     text-align: center;
 
 }
+
 
 
 .unit-card {
