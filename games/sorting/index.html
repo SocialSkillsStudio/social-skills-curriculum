@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emergency Sorting Game</title>
+
+<link rel="stylesheet" href="../../css/styles.css">
+
+<style>
+
+.game-container {
+
+text-align:center;
+padding:20px;
+
+}
+
+
+.cards {
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+
+.card {
+
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 10px rgba(0,0,0,.15);
+font-size:18px;
+cursor:pointer;
+
+}
+
+
+.sort-box {
+
+width:250px;
+min-height:150px;
+margin:20px;
+padding:20px;
+display:inline-block;
+border-radius:20px;
+background:#f5f5f5;
+
+}
+
+
+.correct {
+
+background:#d4edda;
+
+}
+
+
+.wrong {
+
+background:#f8d7da;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<h1>🚨 Emergency or Not?</h1>
+
+<p>Click each card and decide where it belongs!</p>
+
+</header>
+
+
+
+<div class="game-container">
+
+
+<h2>Cards</h2>
+
+
+<div class="cards">
+
+
+<div class="card" onclick="checkAnswer(this,'emergency')">
+🔥 A classroom is on fire
+</div>
+
+
+<div class="card" onclick="checkAnswer(this,'not')">
+✏️ Your pencil breaks
+</div>
+
+
+<div class="card" onclick="checkAnswer(this,'emergency')">
+🚗 A car crashes
+</div>
+
+
+<div class="card" onclick="checkAnswer(this,'not')">
+🧸 You lose your toy
+</div>
+
+
+<div class="card" onclick="checkAnswer(this,'emergency')">
+🚑 Someone is badly hurt
+</div>
+
+
+<div class="card" onclick="checkAnswer(this,'not')">
+🍎 You don't like your lunch
+</div>
+
+
+</div>
+
+
+
+<h2>Put it here:</h2>
+
+
+<div class="sort-box" id="emergency">
+
+🚨 EMERGENCY
+
+</div>
+
+
+<div class="sort-box" id="not">
+
+🙂 NOT AN EMERGENCY
+
+</div>
+
+
+
+<h2 id="feedback">
+</h2>
+
+
+
+<a class="button" href="../../units/emergencies/blue-group/monday.html">
+⬅ Back to Lesson
+</a>
+
+
+
+</div>
+
+
+
+<script>
+
+function checkAnswer(card, answer){
+
+let choice = prompt(
+"Type: emergency or not"
+);
+
+
+if(choice === answer){
+
+card.classList.add("correct");
+
+document.getElementById("feedback").innerHTML =
+"⭐ Great job!";
+
+
+}
+
+else{
+
+card.classList.add("wrong");
+
+document.getElementById("feedback").innerHTML =
+"Try again!";
+
+
+}
+
+
+}
+
+</script>
+
+
+</body>
+
+</html>
