@@ -422,3 +422,21 @@ header h1 {
 
 
 }
+
+/* =========================
+   Social Circles Image
+========================= */
+
+.social-circle-image {
+
+    display: block;
+
+    max-width: 300px;
+
+    width: 80%;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+}
