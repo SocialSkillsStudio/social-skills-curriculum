@@ -8,6 +8,12 @@ fetch(file)
 
 document.getElementById(id).innerHTML = data;
 
+})
+
+.catch(error => {
+
+console.log("Component loading error:", error);
+
 });
 
 }
