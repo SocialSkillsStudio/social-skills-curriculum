@@ -8,7 +8,7 @@
 
 <title>Emergency Fast Finishers</title>
 
-<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="../../../css/styles.css">
 
 </head>
 
@@ -30,13 +30,79 @@
 
 <h2>⚡ Emergency Fast Finishers</h2>
 
+<p>
+Finished your work? Choose an extra challenge!
+</p>
 
 <p>
-Finished your assignment? Choose an extra challenge!
+Practice your emergency safety skills.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🎮 Game 1: Emergency or Not?</h2>
+
+<p>
+Click the best answer.
 </p>
 
 
+<h3>🔥 You see smoke coming from a building.</h3>
+
+<button class="button" onclick="checkAnswer(true,'one')">
+🚨 Emergency
+</button>
+
+<button class="button" onclick="checkAnswer(false,'one')">
+🙂 Not an Emergency
+</button>
+
+<p id="one"></p>
+
+
+
+
+
+<h3>🎒 You forgot your pencil.</h3>
+
+<button class="button" onclick="checkAnswer(false,'two')">
+🚨 Emergency
+</button>
+
+<button class="button" onclick="checkAnswer(true,'two')">
+🙂 Not an Emergency
+</button>
+
+<p id="two"></p>
+
+
+
+
+
+<h3>🤕 Someone falls and is badly hurt.</h3>
+
+<button class="button" onclick="checkAnswer(true,'three')">
+🚨 Emergency
+</button>
+
+<button class="button" onclick="checkAnswer(false,'three')">
+🙂 Not an Emergency
+</button>
+
+<p id="three"></p>
+
+
 </div>
+
+
+
 
 
 
@@ -45,38 +111,78 @@ Finished your assignment? Choose an extra challenge!
 
 <div class="unit-card">
 
-<h2>🎮 Safety Games</h2>
-
-
-<a class="button" href="https://wordwall.net/" target="_blank">
-
-🚨 Emergency Sorting Game
-
-</a>
-
-
-<a class="button" href="https://wordwall.net/" target="_blank">
-
-👥 Community Helpers Game
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>🧠 Extra Thinking Questions</h2>
+<h2>👥 Game 2: Who Can Help?</h2>
 
 
 <p>
-Answer these in your notebook or on the computer.
+Choose the person who can help.
+</p>
+
+
+
+
+<h3>🔥 There is a fire.</h3>
+
+<button class="button" onclick="checkAnswer(true,'four')">
+🚒 Firefighter
+</button>
+
+<button class="button" onclick="checkAnswer(false,'four')">
+🍳 Chef
+</button>
+
+<p id="four"></p>
+
+
+
+
+
+<h3>🤕 Someone is injured.</h3>
+
+<button class="button" onclick="checkAnswer(true,'five')">
+🚑 Paramedic
+</button>
+
+<button class="button" onclick="checkAnswer(false,'five')">
+🎨 Artist
+</button>
+
+<p id="five"></p>
+
+
+
+
+
+<h3>😟 You feel unsafe at school.</h3>
+
+<button class="button" onclick="checkAnswer(true,'six')">
+👩‍🏫 Trusted Adult
+</button>
+
+<button class="button" onclick="checkAnswer(false,'six')">
+🙈 Ignore it
+</button>
+
+<p id="six"></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="unit-card">
+
+<h2>🧠 Emergency Expert Questions</h2>
+
+
+<p>
+Answer these questions:
 </p>
 
 
@@ -88,17 +194,17 @@ Why is it important to stay calm during an emergency?
 
 
 <li>
-Who are three people who can help during emergencies?
+Name three people who help during emergencies.
 </li>
 
 
 <li>
-What should you do if you do not know what to do?
+What should you do if you are unsure what to do?
 </li>
 
 
 <li>
-Why do schools practice safety drills?
+Why do schools practice drills?
 </li>
 
 
@@ -110,7 +216,12 @@ What makes someone a good helper?
 </ol>
 
 
+<textarea rows="6" cols="50" placeholder="Type your answers here..."></textarea>
+
+
 </div>
+
+
 
 
 
@@ -120,67 +231,24 @@ What makes someone a good helper?
 
 <div class="unit-card">
 
-<h2>✏️ Challenge Writing</h2>
+<h2>⭐ Challenge Scenario</h2>
 
 
 <p>
-Choose one:
+Your class is walking outside when you notice a student falls and cannot get up.
 </p>
 
 
-<ul>
+<p>
+What should you do?
+</p>
 
-<li>
-Write a story about a person who makes a safe choice.
-</li>
 
-<li>
-Create an emergency safety poster.
-</li>
-
-<li>
-Make a list of emergency helpers and their jobs.
-</li>
-
-</ul>
+<textarea rows="4" cols="50" placeholder="Explain what you would do..."></textarea>
 
 
 </div>
 
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>⭐ Emergency Expert Challenge</h2>
-
-
-<p>
-Can you explain what to do in these situations?
-</p>
-
-
-<ul>
-
-<li>
-A fire alarm goes off at school.
-</li>
-
-<li>
-Someone gets hurt on the playground.
-</li>
-
-<li>
-You see smoke coming from a building.
-</li>
-
-</ul>
-
-
-</div>
 
 
 
@@ -201,36 +269,61 @@ You see smoke coming from a building.
 
 
 
+
 <div id="footer"></div>
 
 
 
 
-<script src="../../js/components.js"></script>
+
+<script src="../../../js/components.js"></script>
 
 
 <script>
 
+
 loadComponent(
 "header",
-"../../components/header.html"
+"../../../components/header.html"
 );
 
 
 loadComponent(
 "navigation",
-"../../components/navigation.html"
+"../../../components/navigation.html"
 );
 
 
 loadComponent(
 "footer",
-"../../components/footer.html"
+"../../../components/footer.html"
 );
 
 
-</script>
 
+
+
+function checkAnswer(correct,id){
+
+if(correct){
+
+document.getElementById(id).innerHTML =
+"⭐ Correct! Great job!";
+
+}
+
+else{
+
+document.getElementById(id).innerHTML =
+"Try again! Think about safety.";
+
+}
+
+}
+
+
+
+</script>
 
 
 </body>
