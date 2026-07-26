@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blue Group - Emergencies</title>
+<title>Blue Group</title>
 
 <link rel="stylesheet" href="../../../css/styles.css">
 
@@ -16,25 +16,9 @@
 <body>
 
 
-<header>
+<div id="header"></div>
 
-<h1>💙 Blue Group</h1>
-
-<p>🚨 Emergency Unit</p>
-
-</header>
-
-
-
-
-<nav class="main-nav">
 <div id="navigation"></div>
-
-
-</nav>
-
-
-
 
 
 <main>
@@ -42,133 +26,67 @@
 
 <div class="unit-card">
 
-<h2>🚨 Emergency Unit</h2>
+<h2>💙 Blue Group</h2>
 
 <p>
-Welcome to the Blue Group Emergency Unit!
+Welcome to Blue Group!
 </p>
-
-<p>
-Choose a day to begin learning.
-</p>
-
-</div>
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>📅 Week 1: Emergencies</h2>
-
 
 <a class="button" href="monday.html">
-
-Monday: What Is An Emergency? 🚨
-
+Monday
 </a>
-
-
-<br>
-
 
 <a class="button" href="tuesday.html">
-
-Tuesday: Community Helpers 🚒
-
+Tuesday
 </a>
-
-
-<br>
-
 
 <a class="button" href="wednesday.html">
-
-Wednesday: Lockdown Drills 🏫
-
+Wednesday
 </a>
-
-
-<br>
-
 
 <a class="button" href="thursday.html">
-
-Thursday: What To Do During An Emergency 🚨
-
+Thursday
 </a>
-
-
-<br>
-
 
 <a class="button" href="friday.html">
-
-Friday: Emergency Expert Review ⭐
-
+Friday
 </a>
 
 
-
 </div>
-
-
-
-
-
-
-
-<div class="unit-card">
-
-<h2>⭐ Skills We Practice</h2>
-
-
-<ul>
-
-<li>Recognizing emergencies</li>
-
-<li>Knowing who can help</li>
-
-<li>Following directions</li>
-
-<li>Using a calm voice</li>
-
-<li>Making safe choices</li>
-
-</ul>
-
-
-</div>
-
-
-
-
-
-<a class="button" href="../../../index.html">
-
-⬅ Back Home
-
-</a>
-
 
 
 </main>
 
 
 
+<div id="footer"></div>
 
 
-<footer>
 
-<p>
-🚨 Social Skills Interactive
-</p>
+<script src="../../../js/components.js"></script>
 
-</footer>
+<script>
 
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+</script>
 
 
 </body>
