@@ -903,3 +903,140 @@ header h1 {
 
 
 }
+
+/* =========================
+   Social Circles Day Activities
+========================= */
+
+.question-box {
+
+    background: #f8faff;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-radius: 15px;
+
+    border: 2px solid #d9e2f2;
+
+}
+
+
+.answer-button {
+
+    background: white;
+
+    border: 2px solid #c9d9f2;
+
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    margin: 6px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.answer-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+    0 4px 8px rgba(0,0,0,.12);
+
+}
+
+
+.feedback {
+
+    font-weight: bold;
+
+    min-height: 24px;
+
+}
+
+
+.text-input {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid #aaa;
+
+    font-size: 16px;
+
+}
+
+
+.breadcrumb {
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+
+.breadcrumb a {
+
+    color: #4a90e2;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.breadcrumb a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.circle-container {
+
+    position: relative;
+
+}
+
+
+.circle-container .circle {
+
+    cursor: default;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .answer-button {
+
+        width: 90%;
+
+        margin: 6px auto;
+
+    }
+
+    .text-input {
+
+        width: 90%;
+
+    }
+
+}
