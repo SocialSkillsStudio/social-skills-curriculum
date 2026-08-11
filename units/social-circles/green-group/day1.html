@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Day 1 - Me | Social Circles</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div id="navigation"></div>
+
+<main>
+
+
+<!-- =========================
+     BREADCRUMB
+========================= -->
+
+<div class="breadcrumb">
+
+<a href="../../../index.html">🏠 Home</a>
+&nbsp;›&nbsp;
+
+<a href="../index.html">⭕ Social Circles</a>
+&nbsp;›&nbsp;
+
+<a href="index.html">💚 Green Group</a>
+&nbsp;›&nbsp;
+
+Day 1: Me
+
+</div>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<div class="unit-card">
+
+<h1>🟣 Day 1: ME!</h1>
+
+<h2>⭕ Social Circles</h2>
+
+<p>
+<strong>Today we are learning about YOU!</strong>
+</p>
+
+<p>
+You are special.
+</p>
+
+<p>
+You are in the center of your social circle!
+</p>
+
+</div>
+
+
+<!-- =========================
+     PROGRESS
+========================= -->
+
+<div class="progress-card">
+
+<h2>📍 Unit Progress</h2>
+
+<div class="progress-bar">
+
+<div class="progress-circle purple">1</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle blue">2</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle green">3</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle yellow">4</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle orange">5</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle gray">6</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle rainbow">7</div>
+
+<div class="progress-line"></div>
+
+<div class="progress-circle gold">8</div>
+
+</div>
+
+<p style="text-align:center;">
+
+<strong>Day 1 of 8</strong>
+
+</p>
+
+</div>
+
+
+<!-- =========================
+     FIND ME
+========================= -->
+
+<div class="unit-card">
+
+<h2>⭕ Find ME!</h2>
+
+<p>
+Look at the social circles.
+</p>
+
+<p>
+<strong>Where are YOU?</strong>
+</p>
+
+
+<div class="circle-container">
+
+<div class="circle stranger-circle">
+
+<strong>STRANGERS</strong>
+
+<div class="circle community-circle">
+
+<strong>COMMUNITY</strong>
+
+<div class="circle friend-circle">
+
+<strong>FRIENDS</strong>
+
+<div class="circle inner-circle">
+
+<strong>FAMILY</strong>
+
+<div class="circle center-circle">
+
+<strong>🟣 ME</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<p style="text-align:center;">
+
+<strong>YOU are in the center! ⭐</strong>
+
+</p>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 1
+========================= -->
+
+<div class="unit-card">
+
+<h2>🎮 Activity 1: Is It ME?</h2>
+
+<p>
+Click the answer that shows <strong>ME</strong>.
+</p>
+
+
+<div class="question-box">
+
+<h3>😊 My feelings</h3>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,true)"
+>
+🟣 ME
+</button>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,false)"
+>
+⚪ NOT ME
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>🍎 My favorite food</h3>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,true)"
+>
+🟣 ME
+</button>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,false)"
+>
+⚪ NOT ME
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>👩‍🏫 My teacher</h3>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,false)"
+>
+🟣 ME
+</button>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,true)"
+>
+⚪ NOT ME
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>🎨 Things I like</h3>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,true)"
+>
+🟣 ME
+</button>
+
+<button
+class="answer-button"
+onclick="greenAnswer(this,false)"
+>
+⚪ NOT ME
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 2
+========================= -->
+
+<div class="unit-card">
+
+<h2>❤️ Activity 2: How Do I Feel?</h2>
+
+<p>
+How do you feel today?
+</p>
+
+
+<button
+class="answer-button"
+onclick="chooseGreenFeeling('Happy 😊')"
+>
+😊 Happy
+</button>
+
+
+<button
+class="answer-button"
+onclick="chooseGreenFeeling('Sad 😢')"
+>
+😢 Sad
+</button>
+
+
+<button
+class="answer-button"
+onclick="chooseGreenFeeling('Angry 😡')"
+>
+😡 Angry
+</button>
+
+
+<button
+class="answer-button"
+onclick="chooseGreenFeeling('Worried 😟')"
+>
+😟 Worried
+</button>
+
+
+<button
+class="answer-button"
+onclick="chooseGreenFeeling('Tired 😴')"
+>
+😴 Tired
+</button>
+
+
+<button
+class="answer-button"
+onclick="chooseGreenFeeling('Excited 😄')"
+>
+😄 Excited
+</button>
+
+
+<p id="green-feeling-feedback"></p>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 3
+========================= -->
+
+<div class="unit-card">
+
+<h2>⭐ Activity 3: Things I Like</h2>
+
+<p>
+Click the things you like!
+</p>
+
+
+<label>
+
+<input type="checkbox">
+
+🍕 Pizza
+
+</label>
+
+<br>
+
+
+<label>
+
+<input type="checkbox">
+
+🎮 Games
+
+</label>
+
+<br>
+
+
+<label>
+
+<input type="checkbox">
+
+🎨 Drawing
+
+</label>
+
+<br>
+
+
+<label>
+
+<input type="checkbox">
+
+🐶 Animals
+
+</label>
+
+<br>
+
+
+<label>
+
+<input type="checkbox">
+
+⚽ Sports
+
+</label>
+
+<br>
+
+
+<label>
+
+<input type="checkbox">
+
+📚 Books
+
+</label>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 4
+========================= -->
+
+<div class="unit-card">
+
+<h2>✏️ Activity 4: All About Me</h2>
+
+<p>
+Tell us about YOU!
+</p>
+
+
+<label>
+
+<strong>My name is:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your name"
+>
+
+
+<br><br>
+
+
+<label>
+
+<strong>I like:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your answer"
+>
+
+
+<br><br>
+
+
+<label>
+
+<strong>I am good at:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your answer"
+>
+
+</div>
+
+
+<!-- =========================
+     MINI BOOK
+========================= -->
+
+<div class="unit-card">
+
+<h2>📖 Today's Mini-Book</h2>
+
+<h3>I Am Me</h3>
+
+<p>
+
+<strong>Fill out your mini-book!</strong>
+
+</p>
+
+<p>
+
+Color the pictures and complete the activities.
+
+</p>
+
+</div>
+
+
+<!-- =========================
+     SIMPLE REFLECTION
+========================= -->
+
+<div class="unit-card">
+
+<h2>⭐ I Am Special!</h2>
+
+<p>
+Everyone is special.
+</p>
+
+<p>
+<strong>What is one thing you like about yourself?</strong>
+</p>
+
+<textarea
+rows="3"
+placeholder="Draw or type your answer..."
+></textarea>
+
+</div>
+
+
+<!-- =========================
+     FINISH
+========================= -->
+
+<div class="unit-card">
+
+<h2>🎉 Great Job!</h2>
+
+<p>
+
+You finished <strong>Day 1: ME!</strong>
+
+</p>
+
+<p>
+
+⭐ You are special!
+
+</p>
+
+<a
+class="button"
+href="day2.html"
+>
+
+➡️ Day 2: Family
+
+</a>
+
+<br>
+
+<a
+class="button"
+href="index.html"
+>
+
+💚 Back to Green Group
+
+</a>
+
+</div>
+
+
+</main>
+
+
+<div id="footer"></div>
+
+
+<!-- =========================
+     COMPONENTS
+========================= -->
+
+<script src="../../../js/components.js"></script>
+
+<script>
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+/* =========================
+   ME / NOT ME
+========================= */
+
+function greenAnswer(button, correct) {
+
+const question =
+button.parentElement;
+
+const feedback =
+question.querySelector(".feedback");
+
+
+if (correct) {
+
+feedback.innerHTML =
+"⭐ Great job!";
+
+feedback.style.color =
+"green";
+
+} else {
+
+feedback.innerHTML =
+"Try again!";
+
+feedback.style.color =
+"red";
+
+}
+
+}
+
+
+/* =========================
+   FEELINGS
+========================= */
+
+function chooseGreenFeeling(feeling) {
+
+const feedback =
+document.getElementById(
+"green-feeling-feedback"
+);
+
+feedback.innerHTML =
+"You chose <strong>" +
+feeling +
+"</strong>! ❤️";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
