@@ -6,73 +6,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Day 1 - Me | Social Circles</title>
+<title>Green Group Day 1 - Me</title>
 
 <link rel="stylesheet" href="../../../css/styles.css">
 
 </head>
 
+
 <body>
+
 
 <div id="header"></div>
 
 <div id="navigation"></div>
 
+
+
 <main>
 
 
-<!-- =========================
-     BREADCRUMB
-========================= -->
-
-<div class="breadcrumb">
-
-<a href="../../../index.html">🏠 Home</a>
-&nbsp;›&nbsp;
-
-<a href="../index.html">⭕ Social Circles</a>
-&nbsp;›&nbsp;
-
-<a href="index.html">💚 Green Group</a>
-&nbsp;›&nbsp;
-
-Day 1: Me
-
-</div>
-
-
-<!-- =========================
-     INTRO
-========================= -->
-
 <div class="unit-card">
 
-<h1>🟣 Day 1: ME!</h1>
+<h1>💚 Green Group</h1>
 
-<h2>⭕ Social Circles</h2>
+<h2>🟣 Day 1: ME!</h2>
 
 <p>
-<strong>Today we are learning about YOU!</strong>
+Today we are learning about <strong>YOU!</strong>
 </p>
 
 <p>
-You are special.
-</p>
-
-<p>
-You are in the center of your social circle!
+You are in the center of your social circle.
 </p>
 
 </div>
 
 
-<!-- =========================
-     PROGRESS
-========================= -->
 
 <div class="progress-card">
 
-<h2>📍 Unit Progress</h2>
+<h2>📍 Day 1 of 8</h2>
 
 <div class="progress-bar">
 
@@ -108,87 +81,33 @@ You are in the center of your social circle!
 
 </div>
 
-<p style="text-align:center;">
-
-<strong>Day 1 of 8</strong>
-
-</p>
-
 </div>
 
 
-<!-- =========================
-     FIND ME
-========================= -->
 
 <div class="unit-card">
 
-<h2>⭕ Find ME!</h2>
+<h2>⭕ I Am in the Center!</h2>
 
 <p>
-Look at the social circles.
+The middle circle is <strong>ME!</strong>
 </p>
 
-<p>
-<strong>Where are YOU?</strong>
-</p>
-
-
-<div class="circle-container">
-
-<div class="circle stranger-circle">
-
-<strong>STRANGERS</strong>
-
-<div class="circle community-circle">
-
-<strong>COMMUNITY</strong>
-
-<div class="circle friend-circle">
-
-<strong>FRIENDS</strong>
-
-<div class="circle inner-circle">
-
-<strong>FAMILY</strong>
-
-<div class="circle center-circle">
-
-<strong>🟣 ME</strong>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<h1 style="text-align:center;">
+🟣 ME
+</h1>
 
 <p style="text-align:center;">
-
-<strong>YOU are in the center! ⭐</strong>
-
+⭐ I am special!
 </p>
 
 </div>
 
 
-<!-- =========================
-     ACTIVITY 1
-========================= -->
 
 <div class="unit-card">
 
-<h2>🎮 Activity 1: Is It ME?</h2>
-
-<p>
-Click the answer that shows <strong>ME</strong>.
-</p>
+<h2>🎮 Is It About Me?</h2>
 
 
 <div class="question-box">
@@ -197,44 +116,46 @@ Click the answer that shows <strong>ME</strong>.
 
 <button
 class="answer-button"
-onclick="greenAnswer(this,true)"
+onclick="checkAnswer(this, true)"
 >
 🟣 ME
 </button>
 
 <button
 class="answer-button"
-onclick="greenAnswer(this,false)"
+onclick="checkAnswer(this, false)"
 >
-⚪ NOT ME
+NOT ME
 </button>
 
 <p class="feedback"></p>
 
 </div>
+
 
 
 <div class="question-box">
 
-<h3>🍎 My favorite food</h3>
+<h3>🍕 My favorite food</h3>
 
 <button
 class="answer-button"
-onclick="greenAnswer(this,true)"
+onclick="checkAnswer(this, true)"
 >
 🟣 ME
 </button>
 
 <button
 class="answer-button"
-onclick="greenAnswer(this,false)"
+onclick="checkAnswer(this, false)"
 >
-⚪ NOT ME
+NOT ME
 </button>
 
 <p class="feedback"></p>
 
 </div>
+
 
 
 <div class="question-box">
@@ -243,16 +164,16 @@ onclick="greenAnswer(this,false)"
 
 <button
 class="answer-button"
-onclick="greenAnswer(this,false)"
+onclick="checkAnswer(this, false)"
 >
 🟣 ME
 </button>
 
 <button
 class="answer-button"
-onclick="greenAnswer(this,true)"
+onclick="checkAnswer(this, true)"
 >
-⚪ NOT ME
+NOT ME
 </button>
 
 <p class="feedback"></p>
@@ -260,47 +181,22 @@ onclick="greenAnswer(this,true)"
 </div>
 
 
-<div class="question-box">
-
-<h3>🎨 Things I like</h3>
-
-<button
-class="answer-button"
-onclick="greenAnswer(this,true)"
->
-🟣 ME
-</button>
-
-<button
-class="answer-button"
-onclick="greenAnswer(this,false)"
->
-⚪ NOT ME
-</button>
-
-<p class="feedback"></p>
-
-</div>
-
 </div>
 
 
-<!-- =========================
-     ACTIVITY 2
-========================= -->
 
 <div class="unit-card">
 
-<h2>❤️ Activity 2: How Do I Feel?</h2>
+<h2>😊 How Do I Feel?</h2>
 
 <p>
-How do you feel today?
+Choose how you feel today.
 </p>
 
 
 <button
 class="answer-button"
-onclick="chooseGreenFeeling('Happy 😊')"
+onclick="chooseFeeling('Happy 😊')"
 >
 😊 Happy
 </button>
@@ -308,7 +204,7 @@ onclick="chooseGreenFeeling('Happy 😊')"
 
 <button
 class="answer-button"
-onclick="chooseGreenFeeling('Sad 😢')"
+onclick="chooseFeeling('Sad 😢')"
 >
 😢 Sad
 </button>
@@ -316,7 +212,7 @@ onclick="chooseGreenFeeling('Sad 😢')"
 
 <button
 class="answer-button"
-onclick="chooseGreenFeeling('Angry 😡')"
+onclick="chooseFeeling('Angry 😡')"
 >
 😡 Angry
 </button>
@@ -324,7 +220,7 @@ onclick="chooseGreenFeeling('Angry 😡')"
 
 <button
 class="answer-button"
-onclick="chooseGreenFeeling('Worried 😟')"
+onclick="chooseFeeling('Worried 😟')"
 >
 😟 Worried
 </button>
@@ -332,124 +228,77 @@ onclick="chooseGreenFeeling('Worried 😟')"
 
 <button
 class="answer-button"
-onclick="chooseGreenFeeling('Tired 😴')"
->
-😴 Tired
-</button>
-
-
-<button
-class="answer-button"
-onclick="chooseGreenFeeling('Excited 😄')"
+onclick="chooseFeeling('Excited 😄')"
 >
 😄 Excited
 </button>
 
 
-<p id="green-feeling-feedback"></p>
+<p id="feeling-feedback"></p>
 
 </div>
 
 
-<!-- =========================
-     ACTIVITY 3
-========================= -->
 
 <div class="unit-card">
 
-<h2>⭐ Activity 3: Things I Like</h2>
+<h2>⭐ Things I Like</h2>
 
 <p>
-Click the things you like!
+Check the things you like.
 </p>
 
 
 <label>
-
 <input type="checkbox">
-
-🍕 Pizza
-
-</label>
-
-<br>
-
-
-<label>
-
-<input type="checkbox">
-
 🎮 Games
-
 </label>
 
 <br>
 
 
 <label>
-
 <input type="checkbox">
-
 🎨 Drawing
-
 </label>
 
 <br>
 
 
 <label>
-
 <input type="checkbox">
-
 🐶 Animals
-
 </label>
 
 <br>
 
 
 <label>
-
 <input type="checkbox">
-
 ⚽ Sports
-
 </label>
 
 <br>
 
 
 <label>
-
 <input type="checkbox">
-
 📚 Books
-
 </label>
+
 
 </div>
 
 
-<!-- =========================
-     ACTIVITY 4
-========================= -->
 
 <div class="unit-card">
 
-<h2>✏️ Activity 4: All About Me</h2>
+<h2>✏️ All About Me</h2>
+
 
 <p>
-Tell us about YOU!
-</p>
-
-
-<label>
-
 <strong>My name is:</strong>
-
-</label>
-
-<br>
+</p>
 
 <input
 type="text"
@@ -458,16 +307,9 @@ placeholder="Type your name"
 >
 
 
-<br><br>
-
-
-<label>
-
+<p>
 <strong>I like:</strong>
-
-</label>
-
-<br>
+</p>
 
 <input
 type="text"
@@ -475,30 +317,10 @@ class="text-input"
 placeholder="Type your answer"
 >
 
-
-<br><br>
-
-
-<label>
-
-<strong>I am good at:</strong>
-
-</label>
-
-<br>
-
-<input
-type="text"
-class="text-input"
-placeholder="Type your answer"
->
 
 </div>
 
 
-<!-- =========================
-     MINI BOOK
-========================= -->
 
 <div class="unit-card">
 
@@ -507,83 +329,48 @@ placeholder="Type your answer"
 <h3>I Am Me</h3>
 
 <p>
-
 <strong>Fill out your mini-book!</strong>
-
 </p>
 
 <p>
-
 Color the pictures and complete the activities.
-
 </p>
 
 </div>
 
 
-<!-- =========================
-     SIMPLE REFLECTION
-========================= -->
-
-<div class="unit-card">
-
-<h2>⭐ I Am Special!</h2>
-
-<p>
-Everyone is special.
-</p>
-
-<p>
-<strong>What is one thing you like about yourself?</strong>
-</p>
-
-<textarea
-rows="3"
-placeholder="Draw or type your answer..."
-></textarea>
-
-</div>
-
-
-<!-- =========================
-     FINISH
-========================= -->
 
 <div class="unit-card">
 
 <h2>🎉 Great Job!</h2>
 
 <p>
-
 You finished <strong>Day 1: ME!</strong>
-
 </p>
 
 <p>
-
-⭐ You are special!
-
+⭐ You are in the center of your social circle!
 </p>
+
 
 <a
 class="button"
 href="day2.html"
 >
-
 ➡️ Day 2: Family
-
 </a>
 
+
 <br>
+
 
 <a
 class="button"
 href="index.html"
 >
-
 💚 Back to Green Group
-
 </a>
+
 
 </div>
 
@@ -591,14 +378,13 @@ href="index.html"
 </main>
 
 
+
 <div id="footer"></div>
 
 
-<!-- =========================
-     COMPONENTS
-========================= -->
 
 <script src="../../../js/components.js"></script>
+
 
 <script>
 
@@ -618,18 +404,12 @@ loadComponent(
 );
 
 
-/* =========================
-   ME / NOT ME
-========================= */
+function checkAnswer(button, correct) {
 
-function greenAnswer(button, correct) {
-
-const question =
-button.parentElement;
+const box = button.parentElement;
 
 const feedback =
-question.querySelector(".feedback");
-
+box.querySelector(".feedback");
 
 if (correct) {
 
@@ -652,18 +432,11 @@ feedback.style.color =
 }
 
 
-/* =========================
-   FEELINGS
-========================= */
+function chooseFeeling(feeling) {
 
-function chooseGreenFeeling(feeling) {
-
-const feedback =
 document.getElementById(
-"green-feeling-feedback"
-);
-
-feedback.innerHTML =
+"feeling-feedback"
+).innerHTML =
 "You chose <strong>" +
 feeling +
 "</strong>! ❤️";
