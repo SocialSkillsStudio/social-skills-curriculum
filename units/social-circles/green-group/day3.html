@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Day 3 - Friends</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+<div id="navigation"></div>
+
+<main>
+
+
+<!-- INTRO -->
+
+<div class="unit-card">
+
+<h1>💚 Green Group</h1>
+
+<h2>🟢 Day 3: Friends</h2>
+
+<p>
+Today we are learning about <strong>friends!</strong>
+</p>
+
+<p>
+Friends are people I know and like to spend time with.
+</p>
+
+</div>
+
+
+<!-- PROGRESS -->
+
+<div class="progress-card">
+
+<h2>📍 Day 3 of 8</h2>
+
+<div class="progress-bar">
+
+<div class="progress-circle purple">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle blue">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle green">3</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle yellow">4</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle orange">5</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle gray">6</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle rainbow">7</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle gold">8</div>
+
+</div>
+
+</div>
+
+
+<!-- REVIEW -->
+
+<div class="unit-card">
+
+<h2>⭕ My Social Circles</h2>
+
+<p>
+🟣 <strong>ME</strong>
+</p>
+
+<p>
+🔵 <strong>FAMILY</strong>
+</p>
+
+<p>
+🟢 <strong>FRIENDS</strong>
+</p>
+
+<p>
+Today we are learning about the <strong>green circle!</strong>
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+
+<div class="unit-card">
+
+<h2>🎥 Watch: Green Far Away Hug Circle</h2>
+
+<p>
+Watch the video about the <strong>Green Friend Circle</strong>.
+</p>
+
+<div style="
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:15px;
+">
+
+<iframe
+src="https://player.vimeo.com/video/877602826?h=0ab070827d&color=008366&title=0&byline=0&portrait=0"
+style="
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+"
+allow="autoplay; fullscreen; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+
+<!-- WHAT IS A FRIEND -->
+
+<div class="unit-card">
+
+<h2>🟢 My Friends</h2>
+
+<p>
+A friend is someone I know.
+</p>
+
+<p>
+I might:
+</p>
+
+<ul>
+
+<li>🎮 Play with my friend</li>
+
+<li>💬 Talk with my friend</li>
+
+<li>😂 Laugh with my friend</li>
+
+<li>🙌 High-five my friend</li>
+
+<li>😊 Spend time with my friend</li>
+
+</ul>
+
+</div>
+
+
+<!-- GAME 1 -->
+
+<div class="unit-card">
+
+<h2>🎮 Friend or Not a Friend?</h2>
+
+
+<div class="question-box">
+
+<h3>🧑‍🤝‍🧑 Someone I play with every day</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟢 FRIEND
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+NOT FRIEND
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>❓ Someone I have never met</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🟢 FRIEND
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+NOT FRIEND
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>😊 Someone I know and like to play with</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟢 FRIEND
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+NOT FRIEND
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- GOOD FRIEND -->
+
+<div class="unit-card">
+
+<h2>⭐ I Can Be a Good Friend</h2>
+
+<p>
+I can:
+</p>
+
+<ul>
+
+<li>👂 Listen</li>
+
+<li>🎲 Take turns</li>
+
+<li>😊 Be kind</li>
+
+<li>🤝 Help</li>
+
+<li>💬 Use nice words</li>
+
+</ul>
+
+</div>
+
+
+<!-- GAME 2 -->
+
+<div class="unit-card">
+
+<h2>🎮 Good Friend Choice</h2>
+
+
+<div class="question-box">
+
+<h3>
+My friend wants a turn.
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🎲 Take turns
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+❌ Never give a turn
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+My friend is talking.
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+👂 Listen
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+📣 Yell over them
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- PERSONAL SPACE -->
+
+<div class="unit-card">
+
+<h2>🤗 Friends and Hugs</h2>
+
+<p>
+Sometimes friends hug.
+</p>
+
+<p>
+<strong>We both have to want the hug.</strong>
+</p>
+
+<p>
+I can say:
+</p>
+
+<p style="font-size:22px;">
+💬 <strong>"Yes!"</strong>
+</p>
+
+<p>
+or
+</p>
+
+<p style="font-size:22px;">
+💬 <strong>"No thank you."</strong>
+</p>
+
+<p>
+My friend can say yes or no too.
+</p>
+
+</div>
+
+
+<!-- GAME 3 -->
+
+<div class="unit-card">
+
+<h2>🎮 What Should I Do?</h2>
+
+
+<div class="question-box">
+
+<h3>
+My friend says, "No hug."
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+👍 Listen
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🤗 Hug anyway
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+I do not want a hug.
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+💬 Say "No thank you."
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+😟 I have to hug.
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- MY FRIENDS -->
+
+<div class="unit-card">
+
+<h2>✏️ My Friends</h2>
+
+<p>
+What do you like to do with your friends?
+</p>
+
+<textarea
+rows="3"
+placeholder="Draw or type your answer..."></textarea>
+
+</div>
+
+
+<!-- MINI BOOK -->
+
+<div class="unit-card">
+
+<h2>📖 Today's Mini-Book</h2>
+
+<h3>My Friends</h3>
+
+<p>
+<strong>Fill out your mini-book!</strong>
+</p>
+
+<p>
+Color the pictures and complete the activities.
+</p>
+
+</div>
+
+
+<!-- FINISH -->
+
+<div class="unit-card">
+
+<h2>🎉 Great Job!</h2>
+
+<p>
+You finished <strong>Day 3: Friends!</strong>
+</p>
+
+<p>
+🟢 Friends are people I know and have a friendship with.
+</p>
+
+<a class="button" href="day4.html">
+➡️ Day 4
+</a>
+
+<br>
+
+<a class="button" href="index.html">
+💚 Back to Green Group
+</a>
+
+</div>
+
+
+</main>
+
+<div id="footer"></div>
+
+
+<script src="../../../js/components.js"></script>
+
+<script>
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+function checkAnswer(button, correct) {
+
+const box = button.parentElement;
+
+const feedback =
+box.querySelector(".feedback");
+
+if (correct) {
+
+feedback.innerHTML =
+"⭐ Great job!";
+
+feedback.style.color =
+"green";
+
+} else {
+
+feedback.innerHTML =
+"Try again!";
+
+feedback.style.color =
+"red";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
