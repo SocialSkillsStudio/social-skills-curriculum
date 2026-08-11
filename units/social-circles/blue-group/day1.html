@@ -18,25 +18,32 @@
 
 <div id="navigation"></div>
 
-
 <main>
 
-<!-- Breadcrumb -->
+
+<!-- =========================
+     BREADCRUMB
+========================= -->
 
 <div class="breadcrumb">
 
 <a href="../../../index.html">🏠 Home</a>
 &nbsp;›&nbsp;
-<a href="../index.html">Social Circles</a>
+
+<a href="../index.html">⭕ Social Circles</a>
 &nbsp;›&nbsp;
+
 <a href="index.html">💙 Blue Group</a>
 &nbsp;›&nbsp;
+
 Day 1: Me
 
 </div>
 
 
-<!-- Lesson Introduction -->
+<!-- =========================
+     LESSON INTRO
+========================= -->
 
 <div class="unit-card">
 
@@ -49,13 +56,15 @@ Day 1: Me
 </p>
 
 <p>
-You are the center of your social circle. You have your own thoughts, feelings, interests, strengths, and choices.
+You are at the center of your social circle. You have your own thoughts, feelings, interests, strengths, and choices.
 </p>
 
 </div>
 
 
-<!-- Progress -->
+<!-- =========================
+     PROGRESS
+========================= -->
 
 <div class="progress-card">
 
@@ -96,21 +105,34 @@ You are the center of your social circle. You have your own thoughts, feelings, 
 </div>
 
 <p style="text-align:center;">
+
 <strong>Day 1 of 8</strong>
+
 </p>
 
 </div>
 
 
-<!-- Social Circles -->
+<!-- =========================
+     SOCIAL CIRCLES
+========================= -->
 
 <div class="unit-card">
 
-<h2>⭕ Social Circles</h2>
+<h2>⭕ Where Am I in My Social Circle?</h2>
 
 <p>
-You are in the center of your social circle!
+
+You are in the <strong>center</strong> of your social circle!
+
 </p>
+
+<p>
+
+The people around you have different relationships with you.
+
+</p>
+
 
 <div class="circle-container">
 
@@ -146,69 +168,92 @@ You are in the center of your social circle!
 
 </div>
 
+
 <p style="text-align:center;">
-<strong>Today we are focusing on ME!</strong>
+
+<strong>Today we are focusing on the center: ME!</strong>
+
 </p>
 
 </div>
 
 
-<!-- About Me -->
+<!-- =========================
+     WHAT MAKES ME ME
+========================= -->
 
 <div class="unit-card">
 
 <h2>🟣 What Makes Me, Me?</h2>
 
 <p>
-Everyone has things that make them unique.
+
+Everyone is different.
+
+</p>
+
+<p>
+
+There are many things that make you <strong>you</strong>.
+
 </p>
 
 <ul>
 
-<li>⭐ My thoughts</li>
+<li>⭐ Your thoughts</li>
 
-<li>❤️ My feelings</li>
+<li>❤️ Your feelings</li>
 
-<li>🎨 My interests</li>
+<li>🎨 Your interests</li>
 
-<li>💪 My strengths</li>
+<li>💪 Your strengths</li>
 
-<li>🧠 My ideas</li>
+<li>🧠 Your ideas</li>
 
-<li>👤 My body</li>
+<li>👤 Your personality</li>
 
 </ul>
 
 </div>
 
 
-<!-- Activity -->
+<!-- =========================
+     ACTIVITY 1
+========================= -->
 
 <div class="unit-card">
 
-<h2>🎮 Activity: Is It About Me?</h2>
+<h2>🎮 Activity 1: What Belongs in My "Me" Circle?</h2>
 
 <p>
-Choose <strong>Me</strong> when the statement is about YOU.
+
+Read each item. Click <strong>ME</strong> if it belongs in your "Me" circle.
+
 </p>
 
 
+<!-- Question 1 -->
+
 <div class="question-box">
 
-<h3>My favorite food</h3>
+<h3>🍕 My favorite food</h3>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, true)"
+onclick="checkAnswer(this,true)"
 >
-🟣 Me
+
+🟣 ME
+
 </button>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, false)"
+onclick="checkAnswer(this,false)"
 >
-⚪ Stranger
+
+⚪ NOT ME
+
 </button>
 
 <p class="feedback"></p>
@@ -216,22 +261,28 @@ onclick="showFeedback(this, false)"
 </div>
 
 
+<!-- Question 2 -->
+
 <div class="question-box">
 
-<h3>My feelings</h3>
+<h3>❤️ My feelings</h3>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, true)"
+onclick="checkAnswer(this,true)"
 >
-🟣 Me
+
+🟣 ME
+
 </button>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, false)"
+onclick="checkAnswer(this,false)"
 >
-🟢 Friends
+
+⚪ NOT ME
+
 </button>
 
 <p class="feedback"></p>
@@ -239,22 +290,28 @@ onclick="showFeedback(this, false)"
 </div>
 
 
+<!-- Question 3 -->
+
 <div class="question-box">
 
-<h3>My favorite game</h3>
+<h3>🎨 My favorite hobby</h3>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, true)"
+onclick="checkAnswer(this,true)"
 >
-🟣 Me
+
+🟣 ME
+
 </button>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, false)"
+onclick="checkAnswer(this,false)"
 >
-🔵 Family
+
+⚪ NOT ME
+
 </button>
 
 <p class="feedback"></p>
@@ -262,22 +319,144 @@ onclick="showFeedback(this, false)"
 </div>
 
 
+<!-- Question 4 -->
+
 <div class="question-box">
 
-<h3>My thoughts</h3>
+<h3>💭 My thoughts</h3>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, true)"
+onclick="checkAnswer(this,true)"
 >
-🟣 Me
+
+🟣 ME
+
 </button>
 
 <button
 class="answer-button"
-onclick="showFeedback(this, false)"
+onclick="checkAnswer(this,false)"
 >
-🟡 Community
+
+⚪ NOT ME
+
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<!-- Question 5 -->
+
+<div class="question-box">
+
+<h3>👩‍🏫 My teacher</h3>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,false)"
+>
+
+🟣 ME
+
+</button>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,true)"
+>
+
+⚪ NOT ME
+
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<!-- Question 6 -->
+
+<div class="question-box">
+
+<h3>🧑‍🤝‍🧑 My friend</h3>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,false)"
+>
+
+🟣 ME
+
+</button>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,true)"
+>
+
+⚪ NOT ME
+
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<!-- Question 7 -->
+
+<div class="question-box">
+
+<h3>👮 A community helper</h3>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,false)"
+>
+
+🟣 ME
+
+</button>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,true)"
+>
+
+⚪ NOT ME
+
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<!-- Question 8 -->
+
+<div class="question-box">
+
+<h3>❓ Someone I don't know</h3>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,false)"
+>
+
+🟣 ME
+
+</button>
+
+<button
+class="answer-button"
+onclick="checkAnswer(this,true)"
+>
+
+⚪ NOT ME
+
 </button>
 
 <p class="feedback"></p>
@@ -287,138 +466,353 @@ onclick="showFeedback(this, false)"
 </div>
 
 
-<!-- All About Me -->
+<!-- =========================
+     ACTIVITY 2
+========================= -->
 
 <div class="unit-card">
 
-<h2>✏️ All About Me</h2>
+<h2>✏️ Activity 2: Build Your "Me" Circle</h2>
 
 <p>
-Tell us a little about yourself.
+
+Choose the things that describe <strong>you</strong>.
+
 </p>
 
-<label for="my-name">
-<strong>My name is:</strong>
+
+<h3>🎨 Things I Like</h3>
+
+<label>
+
+<input type="checkbox">
+
+Sports
+
 </label>
 
 <br>
 
-<input
-type="text"
-id="my-name"
-class="text-input"
-placeholder="Type your name"
->
+<label>
 
-<br><br>
+<input type="checkbox">
 
+Video games
 
-<label for="favorite">
-<strong>My favorite thing is:</strong>
 </label>
 
 <br>
 
-<input
-type="text"
-id="favorite"
-class="text-input"
-placeholder="Type your answer"
->
+<label>
 
-<br><br>
+<input type="checkbox">
 
+Drawing
 
-<label for="good-at">
-<strong>I am good at:</strong>
 </label>
 
 <br>
 
-<input
-type="text"
-id="good-at"
-class="text-input"
-placeholder="Type your answer"
->
+<label>
 
-<br><br>
+<input type="checkbox">
 
+Reading
 
-<label for="like">
-<strong>I like:</strong>
 </label>
 
 <br>
 
-<input
-type="text"
-id="like"
-class="text-input"
-placeholder="Type your answer"
->
+<label>
+
+<input type="checkbox">
+
+Music
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Animals
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Cooking
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Other: _____________
+
+</label>
+
+
+<hr>
+
+
+<h3>💪 Things I Am Good At</h3>
+
+<label>
+
+<input type="checkbox">
+
+Helping others
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Being creative
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Math
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Reading
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Sports
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Making people laugh
+
+</label>
+
+<br>
+
+<label>
+
+<input type="checkbox">
+
+Other: _____________
+
+</label>
 
 </div>
 
 
-<!-- Feelings -->
+<!-- =========================
+     ACTIVITY 3
+========================= -->
 
 <div class="unit-card">
 
-<h2>❤️ How Do I Feel?</h2>
+<h2>❤️ Activity 3: My Feelings</h2>
 
 <p>
-Everyone has feelings. How are you feeling today?
+
+Everyone has feelings.
+
 </p>
 
-<button
-class="answer-button"
-onclick="chooseFeeling('Happy')"
->
-😊 Happy
-</button>
+<p>
+
+How are you feeling today?
+
+</p>
+
 
 <button
 class="answer-button"
-onclick="chooseFeeling('Sad')"
+onclick="chooseFeeling('Happy 😊')"
 >
-😢 Sad
+
+Happy 😊
+
 </button>
+
 
 <button
 class="answer-button"
-onclick="chooseFeeling('Angry')"
+onclick="chooseFeeling('Sad 😢')"
 >
-😡 Angry
+
+Sad 😢
+
 </button>
+
 
 <button
 class="answer-button"
-onclick="chooseFeeling('Worried')"
+onclick="chooseFeeling('Angry 😡')"
 >
-😟 Worried
+
+Angry 😡
+
 </button>
+
 
 <button
 class="answer-button"
-onclick="chooseFeeling('Tired')"
+onclick="chooseFeeling('Worried 😟')"
 >
-😴 Tired
+
+Worried 😟
+
 </button>
+
 
 <button
 class="answer-button"
-onclick="chooseFeeling('Excited')"
+onclick="chooseFeeling('Tired 😴')"
 >
-😄 Excited
+
+Tired 😴
+
 </button>
+
+
+<button
+class="answer-button"
+onclick="chooseFeeling('Excited 😄')"
+>
+
+Excited 😄
+
+</button>
+
 
 <p id="feeling-feedback"></p>
 
 </div>
 
 
-<!-- Mini Book -->
+<!-- =========================
+     ACTIVITY 4
+========================= -->
+
+<div class="unit-card">
+
+<h2>✏️ Activity 4: All About Me</h2>
+
+<p>
+
+Tell us more about yourself.
+
+</p>
+
+
+<label>
+
+<strong>My name is:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your name"
+>
+
+
+<br><br>
+
+
+<label>
+
+<strong>My favorite thing is:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your answer"
+>
+
+
+<br><br>
+
+
+<label>
+
+<strong>I am good at:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your answer"
+>
+
+
+<br><br>
+
+
+<label>
+
+<strong>One thing that makes me special is:</strong>
+
+</label>
+
+<br>
+
+<input
+type="text"
+class="text-input"
+placeholder="Type your answer"
+>
+
+</div>
+
+
+<!-- =========================
+     MINI BOOK
+========================= -->
 
 <div class="unit-card">
 
@@ -427,24 +821,32 @@ onclick="chooseFeeling('Excited')"
 <h3>I Am Me</h3>
 
 <p>
+
 <strong>Fill out your mini-book!</strong>
+
 </p>
 
 <p>
+
 Color the pictures, write your answers, and learn about what makes you special.
+
 </p>
 
 </div>
-  
 
-<!-- Reflection -->
+
+<!-- =========================
+     REFLECTION
+========================= -->
 
 <div class="unit-card">
 
 <h2>🧠 Reflection</h2>
 
 <p>
-What is one thing that makes you special?
+
+What is one thing you like about yourself?
+
 </p>
 
 <textarea
@@ -455,14 +857,18 @@ placeholder="Type your answer here..."
 </div>
 
 
-<!-- Challenge -->
+<!-- =========================
+     CHALLENGE
+========================= -->
 
 <div class="unit-card">
 
-<h2>⭐ Challenge</h2>
+<h2>⭐ Challenge Question</h2>
 
 <p>
-Why do you think <strong>Me</strong> is in the center of the social circles?
+
+Why do you think <strong>ME</strong> is in the center of the social circles?
+
 </p>
 
 <textarea
@@ -473,43 +879,61 @@ placeholder="Type your answer here..."
 </div>
 
 
-<!-- Finish -->
+<!-- =========================
+     FINISH
+========================= -->
 
 <div class="unit-card">
 
 <h2>🎉 Great Job!</h2>
 
 <p>
-You finished Day 1!
+
+You finished <strong>Day 1: Me!</strong>
+
 </p>
 
 <p>
-You learned that <strong>you are at the center of your social circle.</strong>
+
+Remember: <strong>You are at the center of your social circle.</strong>
+
 </p>
+
 
 <a
 class="button"
 href="day2.html"
 >
+
 ➡️ Day 2: Family
+
 </a>
 
+
 <br>
+
 
 <a
 class="button"
 href="index.html"
 >
+
 💙 Back to Blue Group
+
 </a>
 
 </div>
+
 
 </main>
 
 
 <div id="footer"></div>
 
+
+<!-- =========================
+     COMPONENTS
+========================= -->
 
 <script src="../../../js/components.js"></script>
 
@@ -531,38 +955,55 @@ loadComponent(
 );
 
 
-function showFeedback(button, correct) {
+/* =========================
+   ME / NOT ME QUESTIONS
+========================= */
 
-const question = button.parentElement;
+function checkAnswer(button, correct) {
+
+const question =
+button.parentElement;
 
 const feedback =
 question.querySelector(".feedback");
 
+
 if (correct) {
 
 feedback.innerHTML =
-"⭐ Correct! That belongs in the <strong>Me</strong> circle.";
+"⭐ Correct! Nice job!";
 
-feedback.style.color = "green";
+feedback.style.color =
+"green";
 
 } else {
 
 feedback.innerHTML =
-"Try again! Think about something that belongs to YOU.";
+"Try again! Think about whether this belongs in your own 'Me' circle.";
 
-feedback.style.color = "red";
+feedback.style.color =
+"red";
 
 }
 
 }
 
+
+/* =========================
+   FEELINGS
+========================= */
 
 function chooseFeeling(feeling) {
 
-document.getElementById("feeling-feedback").innerHTML =
+const feedback =
+document.getElementById(
+"feeling-feedback"
+);
+
+feedback.innerHTML =
 "You chose <strong>" +
 feeling +
-"</strong>. Thank you for sharing how you feel! ❤️";
+"</strong>. ❤️";
 
 }
 
