@@ -25,18 +25,18 @@
 
 <div class="breadcrumb">
 
-<a href="../../../../index.html">🏠 Home</a>
->
+<a href="../../../index.html">🏠 Home</a>
+&nbsp;›&nbsp;
 <a href="../index.html">Social Circles</a>
->
+&nbsp;›&nbsp;
 <a href="index.html">💙 Blue Group</a>
->
+&nbsp;›&nbsp;
 Day 1: Me
 
 </div>
 
 
-<!-- Lesson Header -->
+<!-- Lesson Introduction -->
 
 <div class="unit-card">
 
@@ -45,12 +45,11 @@ Day 1: Me
 <h2>Unit 2 • Social Circles</h2>
 
 <p>
-Today we are learning about <strong>Me!</strong>
+<strong>Today we are learning about YOU!</strong>
 </p>
 
 <p>
-You are at the center of your social circle.
-You have your own thoughts, feelings, interests, and choices.
+You are the center of your social circle. You have your own thoughts, feelings, interests, strengths, and choices.
 </p>
 
 </div>
@@ -60,7 +59,7 @@ You have your own thoughts, feelings, interests, and choices.
 
 <div class="progress-card">
 
-<h2>📍 Your Progress</h2>
+<h2>📍 Unit Progress</h2>
 
 <div class="progress-bar">
 
@@ -103,11 +102,11 @@ You have your own thoughts, feelings, interests, and choices.
 </div>
 
 
-<!-- Social Circle -->
+<!-- Social Circles -->
 
 <div class="unit-card">
 
-<h2>⭕ Where Am I in My Social Circle?</h2>
+<h2>⭕ Social Circles</h2>
 
 <p>
 You are in the center of your social circle!
@@ -148,13 +147,13 @@ You are in the center of your social circle!
 </div>
 
 <p style="text-align:center;">
-<strong>Today we are focusing on the center: ME!</strong>
+<strong>Today we are focusing on ME!</strong>
 </p>
 
 </div>
 
 
-<!-- What is Me? -->
+<!-- About Me -->
 
 <div class="unit-card">
 
@@ -183,44 +182,33 @@ Everyone has things that make them unique.
 </div>
 
 
-<!-- Interactive Activity -->
+<!-- Activity -->
 
 <div class="unit-card">
 
-<h2>🎮 Activity 1: Is It About Me?</h2>
+<h2>🎮 Activity: Is It About Me?</h2>
 
 <p>
-Click the answer that belongs in the <strong>Me</strong> circle.
+Choose <strong>Me</strong> when the statement is about YOU.
 </p>
 
 
 <div class="question-box">
 
-<h3>1. My favorite food</h3>
+<h3>My favorite food</h3>
 
-<button class="answer-button" onclick="checkAnswer(this, true)">
-🟢 Me
+<button
+class="answer-button"
+onclick="showFeedback(this, true)"
+>
+🟣 Me
 </button>
 
-<button class="answer-button" onclick="checkAnswer(this, false)">
-🔵 Stranger
-</button>
-
-<p class="feedback"></p>
-
-</div>
-
-
-<div class="question-box">
-
-<h3>2. My feelings</h3>
-
-<button class="answer-button" onclick="checkAnswer(this, true)">
-🟢 Me
-</button>
-
-<button class="answer-button" onclick="checkAnswer(this, false)">
-🔵 Community
+<button
+class="answer-button"
+onclick="showFeedback(this, false)"
+>
+⚪ Stranger
 </button>
 
 <p class="feedback"></p>
@@ -230,13 +218,42 @@ Click the answer that belongs in the <strong>Me</strong> circle.
 
 <div class="question-box">
 
-<h3>3. My favorite game</h3>
+<h3>My feelings</h3>
 
-<button class="answer-button" onclick="checkAnswer(this, true)">
-🟢 Me
+<button
+class="answer-button"
+onclick="showFeedback(this, true)"
+>
+🟣 Me
 </button>
 
-<button class="answer-button" onclick="checkAnswer(this, false)">
+<button
+class="answer-button"
+onclick="showFeedback(this, false)"
+>
+🟢 Friends
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>My favorite game</h3>
+
+<button
+class="answer-button"
+onclick="showFeedback(this, true)"
+>
+🟣 Me
+</button>
+
+<button
+class="answer-button"
+onclick="showFeedback(this, false)"
+>
 🔵 Family
 </button>
 
@@ -247,14 +264,20 @@ Click the answer that belongs in the <strong>Me</strong> circle.
 
 <div class="question-box">
 
-<h3>4. My thoughts</h3>
+<h3>My thoughts</h3>
 
-<button class="answer-button" onclick="checkAnswer(this, true)">
-🟢 Me
+<button
+class="answer-button"
+onclick="showFeedback(this, true)"
+>
+🟣 Me
 </button>
 
-<button class="answer-button" onclick="checkAnswer(this, false)">
-🔵 Friends
+<button
+class="answer-button"
+onclick="showFeedback(this, false)"
+>
+🟡 Community
 </button>
 
 <p class="feedback"></p>
@@ -264,34 +287,34 @@ Click the answer that belongs in the <strong>Me</strong> circle.
 </div>
 
 
-<!-- About Me -->
+<!-- All About Me -->
 
 <div class="unit-card">
 
-<h2>✏️ Activity 2: All About Me</h2>
+<h2>✏️ All About Me</h2>
 
 <p>
-Tell us a little about yourself!
+Tell us a little about yourself.
 </p>
 
-<label for="name">
-My name is:
+<label for="my-name">
+<strong>My name is:</strong>
 </label>
 
 <br>
 
 <input
 type="text"
-id="name"
-placeholder="Type your name"
+id="my-name"
 class="text-input"
+placeholder="Type your name"
 >
 
 <br><br>
 
 
 <label for="favorite">
-My favorite thing is:
+<strong>My favorite thing is:</strong>
 </label>
 
 <br>
@@ -299,31 +322,31 @@ My favorite thing is:
 <input
 type="text"
 id="favorite"
-placeholder="Type your answer"
 class="text-input"
+placeholder="Type your answer"
 >
 
 <br><br>
 
 
-<label for="strength">
-I am good at:
+<label for="good-at">
+<strong>I am good at:</strong>
 </label>
 
 <br>
 
 <input
 type="text"
-id="strength"
-placeholder="Type your answer"
+id="good-at"
 class="text-input"
+placeholder="Type your answer"
 >
 
 <br><br>
 
 
 <label for="like">
-I like:
+<strong>I like:</strong>
 </label>
 
 <br>
@@ -331,8 +354,8 @@ I like:
 <input
 type="text"
 id="like"
-placeholder="Type your answer"
 class="text-input"
+placeholder="Type your answer"
 >
 
 </div>
@@ -342,54 +365,50 @@ class="text-input"
 
 <div class="unit-card">
 
-<h2>❤️ My Feelings</h2>
+<h2>❤️ How Do I Feel?</h2>
 
 <p>
-Everyone has feelings. Feelings can change throughout the day.
-</p>
-
-<p>
-Which feeling are you having right now?
+Everyone has feelings. How are you feeling today?
 </p>
 
 <button
 class="answer-button"
-onclick="selectFeeling(this)"
+onclick="chooseFeeling('Happy')"
 >
 😊 Happy
 </button>
 
 <button
 class="answer-button"
-onclick="selectFeeling(this)"
+onclick="chooseFeeling('Sad')"
 >
 😢 Sad
 </button>
 
 <button
 class="answer-button"
-onclick="selectFeeling(this)"
+onclick="chooseFeeling('Angry')"
 >
 😡 Angry
 </button>
 
 <button
 class="answer-button"
-onclick="selectFeeling(this)"
+onclick="chooseFeeling('Worried')"
 >
 😟 Worried
 </button>
 
 <button
 class="answer-button"
-onclick="selectFeeling(this)"
+onclick="chooseFeeling('Tired')"
 >
 😴 Tired
 </button>
 
 <button
 class="answer-button"
-onclick="selectFeeling(this)"
+onclick="chooseFeeling('Excited')"
 >
 😄 Excited
 </button>
@@ -403,25 +422,17 @@ onclick="selectFeeling(this)"
 
 <div class="unit-card">
 
-<h2>📖 Today's Mini-Book</h2>
+<h2>📖 Today's Social Story</h2>
 
 <h3>I Am Me</h3>
 
 <p>
-Read and color today's social story.
+Read the social story about today's circle.
 </p>
 
 <p>
-<strong>Mini-book coming soon!</strong>
+<strong>Our printable mini-book will be added here.</strong>
 </p>
-
-<a
-class="button"
-href="../mini-books/me.pdf"
-target="_blank"
->
-📖 Open Mini-Book
-</a>
 
 </div>
 
@@ -437,7 +448,6 @@ What is one thing that makes you special?
 </p>
 
 <textarea
-id="reflection"
 rows="4"
 placeholder="Type your answer here..."
 ></textarea>
@@ -449,10 +459,10 @@ placeholder="Type your answer here..."
 
 <div class="unit-card">
 
-<h2>⭐ Challenge Question</h2>
+<h2>⭐ Challenge</h2>
 
 <p>
-Why do you think <strong>Me</strong> is in the center of the social circle?
+Why do you think <strong>Me</strong> is in the center of the social circles?
 </p>
 
 <textarea
@@ -463,7 +473,7 @@ placeholder="Type your answer here..."
 </div>
 
 
-<!-- Completion -->
+<!-- Finish -->
 
 <div class="unit-card">
 
@@ -474,15 +484,17 @@ You finished Day 1!
 </p>
 
 <p>
-Today you learned that <strong>you are at the center of your social circle.</strong>
+You learned that <strong>you are at the center of your social circle.</strong>
 </p>
 
 <a
 class="button"
-href="../day2.html"
+href="day2.html"
 >
-➡️ Go to Day 2: Family
+➡️ Day 2: Family
 </a>
+
+<br>
 
 <a
 class="button"
@@ -519,27 +531,23 @@ loadComponent(
 );
 
 
-/* =========================
-   Answer Feedback
-========================= */
+function showFeedback(button, correct) {
 
-function checkAnswer(button, correct) {
-
-const box = button.parentElement;
+const question = button.parentElement;
 
 const feedback =
-box.querySelector(".feedback");
+question.querySelector(".feedback");
 
 if (correct) {
 
-feedback.textContent =
-"⭐ Correct! That belongs in the Me circle.";
+feedback.innerHTML =
+"⭐ Correct! That belongs in the <strong>Me</strong> circle.";
 
 feedback.style.color = "green";
 
 } else {
 
-feedback.textContent =
+feedback.innerHTML =
 "Try again! Think about something that belongs to YOU.";
 
 feedback.style.color = "red";
@@ -549,24 +557,17 @@ feedback.style.color = "red";
 }
 
 
-/* =========================
-   Feelings
-========================= */
+function chooseFeeling(feeling) {
 
-function selectFeeling(button) {
-
-const feedback =
-document.getElementById("feeling-feedback");
-
-feedback.textContent =
-"You chose " + button.textContent.trim() +
-". Thank you for sharing how you feel! ❤️";
-
-feedback.style.color = "#555";
+document.getElementById("feeling-feedback").innerHTML =
+"You chose <strong>" +
+feeling +
+"</strong>. Thank you for sharing how you feel! ❤️";
 
 }
 
 </script>
+
 
 </body>
 
