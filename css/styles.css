@@ -1040,3 +1040,128 @@ header h1 {
     }
 
 }
+
+/* =========================
+   Day 1 Interactive Activities
+========================= */
+
+.question-box {
+
+    background: #f8faff;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-radius: 15px;
+
+    border: 2px solid #d9e2f2;
+
+}
+
+
+.question-box h3 {
+
+    margin-top: 0;
+
+}
+
+
+.answer-button {
+
+    background: white;
+
+    border: 2px solid #c9d9f2;
+
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    margin: 6px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.answer-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+    0 4px 8px rgba(0,0,0,.12);
+
+}
+
+
+.feedback {
+
+    min-height: 24px;
+
+    font-weight: bold;
+
+}
+
+
+.text-input {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid #aaa;
+
+    font-size: 16px;
+
+}
+
+
+.unit-card hr {
+
+    margin: 25px 0;
+
+    border: none;
+
+    border-top: 2px solid #e5e5e5;
+
+}
+
+
+#feeling-feedback {
+
+    margin-top: 18px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .answer-button {
+
+        width: 90%;
+
+        margin: 6px auto;
+
+    }
+
+    .text-input {
+
+        width: 90%;
+
+    }
+
+}
