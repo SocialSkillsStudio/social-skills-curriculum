@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Group Day 4 - Familiar People</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+<div id="navigation"></div>
+
+<main>
+
+
+<!-- INTRO -->
+
+<div class="unit-card">
+
+<h1>💚 Green Group</h1>
+
+<h2>🟡 Day 4: Familiar People</h2>
+
+<p>
+Today we are learning about the
+<strong>Yellow Circle!</strong>
+</p>
+
+<p>
+These are people I know.
+</p>
+
+</div>
+
+
+<!-- PROGRESS -->
+
+<div class="progress-card">
+
+<h2>📍 Day 4 of 8</h2>
+
+<div class="progress-bar">
+
+<div class="progress-circle purple">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle blue">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle green">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle yellow">4</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle orange">5</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle gray">6</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle rainbow">7</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle gold">8</div>
+
+</div>
+
+</div>
+
+
+<!-- VIDEO -->
+
+<div class="unit-card">
+
+<h2>🎥 Yellow Handshake Circle</h2>
+
+<p>
+Watch the video about the
+<strong>Yellow Circle.</strong>
+</p>
+
+<div style="
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:15px;
+">
+
+<iframe
+src="https://player.vimeo.com/video/877601825?h=c0ba514a28&color=008366&title=0&byline=0&portrait=0"
+style="
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+"
+allow="autoplay; fullscreen; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+
+<!-- WHO -->
+
+<div class="unit-card">
+
+<h2>🟡 Who Is in the Yellow Circle?</h2>
+
+<p>
+These are people I <strong>know.</strong>
+</p>
+
+<p>They might be:</p>
+
+<ul>
+
+<li>👩‍🏫 My teacher</li>
+
+<li>🏫 School staff</li>
+
+<li>🏀 My coach</li>
+
+<li>🚌 My bus driver</li>
+
+<li>🏠 A neighbor I know</li>
+
+</ul>
+
+</div>
+
+
+<!-- GAME -->
+
+<div class="unit-card">
+
+<h2>🎮 Yellow Circle?</h2>
+
+
+<div class="question-box">
+
+<h3>👩‍🏫 My teacher</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟡 YES
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+NO
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>👵 My grandma</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🟡 YELLOW
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🔵 FAMILY
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>🏀 My coach</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟡 YES
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+NO
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- GREETINGS -->
+
+<div class="unit-card">
+
+<h2>🤝 How Can I Say Hello?</h2>
+
+<p>
+With Yellow Circle people, I can:
+</p>
+
+<ul>
+
+<li>👋 Wave</li>
+
+<li>😊 Smile</li>
+
+<li>💬 Say "Hi!"</li>
+
+<li>🙌 High-five</li>
+
+<li>🤝 Handshake</li>
+
+</ul>
+
+<p>
+<strong>I usually do not cuddle with people in my Yellow Circle.</strong>
+</p>
+
+</div>
+
+
+<!-- GREETING GAME -->
+
+<div class="unit-card">
+
+<h2>🎮 Pick a Greeting!</h2>
+
+
+<div class="question-box">
+
+<h3>
+I see my teacher.
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+👋 Wave
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🧸 Cuddle
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+I see my coach.
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🙌 High-five
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🧸 Cuddle
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- PERSONAL SPACE -->
+
+<div class="unit-card">
+
+<h2>⭐ Personal Space</h2>
+
+<p>
+I give people space.
+</p>
+
+<p>
+I can ask before touching someone.
+</p>
+
+<p>
+If someone says:
+</p>
+
+<p style="font-size:22px;">
+<strong>💬 "No thank you."</strong>
+</p>
+
+<p>
+I listen.
+</p>
+
+<p>
+<strong>Other people listen when I say no too.</strong>
+</p>
+
+</div>
+
+
+<!-- MY CIRCLE -->
+
+<div class="unit-card">
+
+<h2>✏️ My Yellow Circle</h2>
+
+<p>
+Who is someone you know?
+</p>
+
+<textarea
+rows="3"
+placeholder="Draw or type..."></textarea>
+
+<p>
+How can you say hello?
+</p>
+
+<textarea
+rows="3"
+placeholder="Draw or type..."></textarea>
+
+</div>
+
+
+<!-- MINI BOOK -->
+
+<div class="unit-card">
+
+<h2>📖 Today's Mini-Book</h2>
+
+<h3>My Yellow Circle</h3>
+
+<p>
+<strong>Fill out your mini-book!</strong>
+</p>
+
+<p>
+Color the pictures and practice ways to say hello.
+</p>
+
+</div>
+
+
+<!-- FINISH -->
+
+<div class="unit-card">
+
+<h2>🎉 Great Job!</h2>
+
+<p>
+You finished <strong>Day 4!</strong>
+</p>
+
+<p>
+🟡 Yellow Circle people are people I know.
+</p>
+
+<p>
+👋 I can wave, smile, say hello, high-five, or use a handshake.
+</p>
+
+<a class="button" href="day5.html">
+➡️ Day 5
+</a>
+
+<br>
+
+<a class="button" href="index.html">
+💚 Back to Green Group
+</a>
+
+</div>
+
+
+</main>
+
+<div id="footer"></div>
+
+
+<script src="../../../js/components.js"></script>
+
+<script>
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+function checkAnswer(button, correct) {
+
+const box = button.parentElement;
+const feedback = box.querySelector(".feedback");
+
+if (correct) {
+
+feedback.innerHTML = "⭐ Great job!";
+feedback.style.color = "green";
+
+} else {
+
+feedback.innerHTML = "Try again!";
+feedback.style.color = "red";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
