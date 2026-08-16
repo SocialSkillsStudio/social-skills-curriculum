@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Day 5 - Orange Wave Circle | Social Circles</title>
+
+<link rel="stylesheet" href="../../../css/styles.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+<div id="navigation"></div>
+
+<main>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<div class="unit-card">
+
+<h1>🟠 Day 5: Orange Wave Circle</h1>
+
+<h2>Unit 2 • Social Circles</h2>
+
+<p>
+Today we are learning about people in the
+<strong>Orange Wave Circle.</strong>
+</p>
+
+<p>
+These are people we may recognize or know a little,
+but they are usually not people we are very close to.
+</p>
+
+</div>
+
+
+<!-- =========================
+     PROGRESS
+========================= -->
+
+<div class="progress-card">
+
+<h2>📍 Unit Progress</h2>
+
+<div class="progress-bar">
+
+<div class="progress-circle purple">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle blue">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle green">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle yellow">✓</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle orange">5</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle gray">6</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle rainbow">7</div>
+<div class="progress-line"></div>
+
+<div class="progress-circle gold">8</div>
+
+</div>
+
+<p style="text-align:center;">
+<strong>Day 5 of 8</strong>
+</p>
+
+</div>
+
+
+<!-- =========================
+     REVIEW
+========================= -->
+
+<div class="unit-card">
+
+<h2>⭕ Our Circles So Far</h2>
+
+<p>🟣 <strong>ME</strong> — My private circle</p>
+
+<p>🔵 <strong>FAMILY</strong> — People very close to me</p>
+
+<p>🟢 <strong>FRIENDS</strong> — People I have friendships with</p>
+
+<p>🟡 <strong>FAMILIAR PEOPLE</strong> — People I know</p>
+
+<p>🟠 <strong>COMMUNITY / ACQUAINTANCES</strong> — People I may recognize or know a little</p>
+
+</div>
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<div class="unit-card">
+
+<h2>🎥 Watch: Orange Wave Circle</h2>
+
+<p>
+Watch the video and think about how we interact with people
+in the <strong>Orange Circle.</strong>
+</p>
+
+<div style="
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:15px;
+">
+
+<iframe
+src="https://player.vimeo.com/video/877603158?h=7f87dc57b1&color=008366&title=0&byline=0&portrait=0"
+style="
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+"
+allow="autoplay; fullscreen; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     WHO IS IN ORANGE
+========================= -->
+
+<div class="unit-card">
+
+<h2>🟠 Who Is in the Orange Circle?</h2>
+
+<p>
+Orange Circle people are people I may recognize,
+see sometimes, or know a little.
+</p>
+
+<p>
+They might include:
+</p>
+
+<ul>
+
+<li>🛒 A store worker I see often</li>
+
+<li>🏘️ A neighbor I recognize</li>
+
+<li>📚 Someone who works at the library</li>
+
+<li>🏥 A receptionist at a doctor's office</li>
+
+<li>🍎 A cafeteria worker</li>
+
+<li>🏫 Someone who works at my school but I do not know well</li>
+
+</ul>
+
+<p>
+I can be friendly with these people,
+but I usually use <strong>more personal space</strong>.
+</p>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 1
+========================= -->
+
+<div class="unit-card">
+
+<h2>🎮 Activity 1: Which Circle?</h2>
+
+<div class="question-box">
+
+<h3>
+A librarian you see sometimes
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟠 ORANGE
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🔵 FAMILY
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+Your best friend
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🟠 ORANGE
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟢 FRIEND
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+A cafeteria worker you recognize
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🟠 ORANGE
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🔵 FAMILY
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+Your grandmother
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🟠 ORANGE
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+🔵 FAMILY
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     WAVE CIRCLE
+========================= -->
+
+<div class="unit-card">
+
+<h2>👋 The Wave Circle</h2>
+
+<p>
+A wave is a good way to greet many people
+in the Orange Circle.
+</p>
+
+<p>
+I might:
+</p>
+
+<ul>
+
+<li>👋 Wave</li>
+
+<li>😊 Smile</li>
+
+<li>💬 Say "Hi!"</li>
+
+<li>💬 Say "Good morning!"</li>
+
+<li>👍 Nod or give a thumbs-up</li>
+
+</ul>
+
+<p>
+I usually do <strong>not</strong> hug or cuddle with people
+in my Orange Circle.
+</p>
+
+<p>
+I give them more personal space than family or close friends.
+</p>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 2
+========================= -->
+
+<div class="unit-card">
+
+<h2>🎮 Activity 2: Choose the Best Greeting</h2>
+
+
+<div class="question-box">
+
+<h3>
+You see a store worker you recognize.
+What could you do?
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+👋 Wave and say hello
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🧸 Cuddle
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+You see the librarian.
+What is a good greeting?
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+😊 Smile and say hi
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🤗 Run up and hug
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+Someone in your Orange Circle does not want a high-five.
+What should you do?
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+👍 Respect their choice
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🙌 High-five them anyway
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 3
+========================= -->
+
+<div class="unit-card">
+
+<h2>🧠 Activity 3: Personal Space</h2>
+
+
+<div class="question-box">
+
+<h3>
+You are talking to someone you only know a little.
+What should you remember?
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+↔️ Give them personal space
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+🤗 Stand very close and cuddle
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+
+<div class="question-box">
+
+<h3>
+You want to touch someone's arm to get their attention.
+What is a better first choice?
+</h3>
+
+<button class="answer-button"
+onclick="checkAnswer(this,true)">
+💬 Say their name or say "Excuse me"
+</button>
+
+<button class="answer-button"
+onclick="checkAnswer(this,false)">
+✋ Grab their arm
+</button>
+
+<p class="feedback"></p>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     ACTIVITY 4
+========================= -->
+
+<div class="unit-card">
+
+<h2>✏️ My Orange Circle</h2>
+
+<p>
+Think of someone you recognize or know a little.
+</p>
+
+<p>
+<strong>Who might be in your Orange Circle?</strong>
+</p>
+
+<textarea
+rows="3"
+placeholder="Type your answer..."></textarea>
+
+<p>
+<strong>How could you greet that person?</strong>
+</p>
+
+<textarea
+rows="3"
+placeholder="Type your answer..."></textarea>
+
+</div>
+
+
+<!-- =========================
+     MINI BOOK
+========================= -->
+
+<div class="unit-card">
+
+<h2>📖 Today's Mini-Book</h2>
+
+<h3>My Orange Wave Circle</h3>
+
+<p>
+<strong>Fill out your mini-book!</strong>
+</p>
+
+<p>
+Learn about acquaintances, waving, greetings, and personal space.
+</p>
+
+</div>
+
+
+<!-- =========================
+     CHALLENGE
+========================= -->
+
+<div class="unit-card">
+
+<h2>⭐ Challenge Question</h2>
+
+<p>
+How is the <strong>Orange Circle</strong> different
+from the <strong>Yellow Circle</strong>?
+</p>
+
+<textarea
+rows="4"
+placeholder="Type your answer..."></textarea>
+
+</div>
+
+
+<!-- =========================
+     FINISH
+========================= -->
+
+<div class="unit-card">
+
+<h2>🎉 Great Job!</h2>
+
+<p>
+You finished <strong>Day 5!</strong>
+</p>
+
+<p>
+Remember:
+</p>
+
+<p>
+🟠 I can be friendly with people I know a little
+while still giving them personal space.
+</p>
+
+<a class="button" href="day6.html">
+➡️ Day 6: Strangers
+</a>
+
+<br>
+
+<a class="button" href="index.html">
+💙 Back to Blue Group
+</a>
+
+</div>
+
+
+</main>
+
+<div id="footer"></div>
+
+
+<script src="../../../js/components.js"></script>
+
+<script>
+
+loadComponent(
+"header",
+"../../../components/header.html"
+);
+
+loadComponent(
+"navigation",
+"../../../components/navigation.html"
+);
+
+loadComponent(
+"footer",
+"../../../components/footer.html"
+);
+
+
+function checkAnswer(button, correct) {
+
+const box = button.parentElement;
+const feedback = box.querySelector(".feedback");
+
+if (correct) {
+
+feedback.innerHTML = "⭐ Correct! Great job!";
+feedback.style.color = "green";
+
+} else {
+
+feedback.innerHTML = "Try again!";
+feedback.style.color = "red";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
